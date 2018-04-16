@@ -1,0 +1,75 @@
+package com.etc.repair.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.Store;
+
+public class StoreDao extends BaseDao{
+
+	public boolean isExistStore(String susername) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		List<Store> list = query("select * from store where susername=?", new Object[]{susername}, Store.class);
+		if(list.size()==0){
+			//不存在
+			return false;
+		}
+		return true;
+	}
+
+	public boolean regist(String susername, String spassword, String sname, String saddress, String spic, String stime,
+			String sdesc) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		int count = Update("insert into store(susername,spassword,sname,saddress,spic,stime,sdesc) values(?,?,?,?,?,?,?)", susername,spassword,sname,saddress,spic,stime,sdesc);
+		//System.out.println(count);
+		return (count==1)?true:false;
+	}
+
+	public Store login(String susername, String spassword) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		List<Store> list = query("select * from store where susername=? and spassword=?", new Object[]{susername, spassword},Store.class);
+		if(list.size()>0){
+			return list.get(0);
+		}
+		
+		return null;
+	}
+
+	/**
+	 * 通过省市获取商家列表
+	 * @param province
+	 * @return
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 * @throws ClassNotFoundException 
+	 */
+	public List<Store> getStore(String searchAddress) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		pstmt = con.prepareStatement("select * from store where saddress like ?");	
+		pstmt.setString(1, "%"+searchAddress+"%");
+		rs = pstmt.executeQuery();
+		List<Store> list = new ArrayList<Store>();
+		while(rs.next()){
+			Store store = new Store();
+			store.setSid(rs.getInt("sid"));
+			store.setSname(rs.getString("sname"));
+			store.setSpic(rs.getString("spic"));
+			store.setSdesc(rs.getString("sdesc"));
+			store.setSaddress(rs.getString("saddress"));
+			list.add(store);
+		}
+		/*for(Store s:list){
+			System.out.println(s);
+		}*/
+		return list;
+	}
+
+}

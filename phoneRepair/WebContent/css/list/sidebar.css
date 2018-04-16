@@ -1,0 +1,195 @@
+/* 
+* @Author: Marte
+* @Date:   2016-03-19 09:11:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-09-08 10:31:06
+*/
+/*css初始化代码*/
+/* 侧边栏开始 */
+.cb_sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index:9998;
+    width: 49px;
+    height: 100%;
+    font: 14px/1.5 "微软雅黑";
+	color:#898989;
+	text-align:center;
+	
+}
+.cb_sidebar .cb_sidebar_bg {
+    left: 0;
+    top: 0;
+    width: 49px;
+    height: 100%;
+	background-color:#fff;
+	border: 1px solid #cdcdcd;
+    border-top: 0 none;
+}
+.cb_sidebar_tabs{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.cb_sidebar_tabs li{
+	border-top:1px solid #e6e6e6;
+	border-left:1px solid #cdcdcd;
+	width:52px;
+	background-color:#fff;
+}
+.cb_sidebar_tabs li a{
+	padding:12px 0;
+	display:block;
+	color:#707070!important;
+}
+.cb_sidebar_tabs li a:hover{
+	background:#40bb8c;
+	color:#fff;
+}
+.cb_sidebar_tabs li a:hover p{
+	color:#fff;
+}
+.cb_sidebar_tabs li p.icon-text{
+	width:20px;
+	word-break:break-all;
+	margin:0 16px;
+	line-height: 20px!important;
+}
+.cb_sidebar_tabs li a:hover i{
+	background-position:-37px -5px;
+}
+.cb_sidebar_tabs li i{
+	display:inline-block;
+	background:url(../images/2016/slider.png) -5px -5px;
+	width:18px;
+	height:30px;
+}
+.cb_sidebar_tabs li.cbwlogo,.cb_sidebar_tabs li.weibo{
+	height:auto;
+}
+.cb_sidebar_tabs li.weibo{
+	border-top:1px solid #e6e6e6;
+}
+.cb_sidebar_tabs li.cbwlogo i{
+	width:25px;
+	height:25px;
+	margin-top:4px;
+	background-position:-18px -227px;
+}
+.cb_sidebar_tabs li.cbwlogo a:hover i{
+	background-position:-17px -260px;
+}
+.cb_sidebar_tabs li.cart{
+	height:110px;
+}
+.cb_sidebar_tabs li.cart i{
+	width:21px;
+	height:22px;
+	background-position:-1px -44px;
+}
+.cb_sidebar_tabs li.cart{
+	position:relative;
+}
+.cb_sidebar_tabs li.cart .cart_num{
+	position:absolute;
+	z-index:3;
+	overflow:hidden;
+	right:6px;
+	top:6px;
+	color:#fff;
+	background-color:#ff4444;
+	font-size:12px;
+    padding: 1px 2px;
+    line-height: 12px;
+	border-radius:7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center;
+}
+.cb_sidebar_tabs li.cart a:hover i{
+	background-position:-38px -44px;
+}
+.cb_sidebar_tabs li.linekefu i{
+	width:20px;
+	height:21px;
+	background-position:-3px -76px;
+}
+.cb_sidebar_tabs li.linekefu a:hover i{
+	background-position:-36px -76px;
+}
+.cb_sidebar_tabs li.weixin{
+	position:relative;
+}
+.cb_sidebar_tabs li.weixin img{
+	position:absolute;
+	z-index:-1;
+	left:51px;
+	top: -30px;
+}
+.cb_sidebar_tabs li.app{
+	position:relative;
+}
+.cb_sidebar_tabs li.app #App_code{
+	position: absolute;
+    z-index: -1;
+    left: 51px;
+    top: -28px;
+    width: 320px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 8px;
+}
+.cb_sidebar_tabs li.app #App_code p{
+	color:#313131;
+}
+.cb_sidebar_tabs li.app #App_code img{
+	width:150px;
+}
+.cb_sidebar_tabs li.app #App_code .app-code{
+	float:left;
+}
+.cb_sidebar_tabs li.app #App_code .android-code{
+	margin-right:20px;
+}
+.cb_sidebar_tabs li.weixin i{
+	width:21px;
+	height:22px;
+	background-position:-4px -111px;
+}
+.cb_sidebar_tabs li.weixin a:hover i{
+	background-position:-35px -111px;
+}
+.cb_sidebar_tabs li.weibo i{
+	width:23px;
+	height:16px;
+	background-position:-4px -148px;
+}
+.cb_sidebar_tabs li.weibo a:hover i{
+	background-position:-33px -148px;
+}
+.scrollUp{
+	width:49px;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.scrollUp a{
+	display:block;
+	padding:10px 0;
+}
+.scrollUp i{
+	width:15px;
+	height:21px;
+	display:inline-block;
+	background:url(../images/2016/slider.png) -7px -181px;
+}
+.scrollUp a:hover{
+	background-color:#40bb8c;
+	color:#fff;
+}
+.scrollUp a:hover i{
+	background-position:-37px -181px;
+}
+/* 侧边栏结束 */

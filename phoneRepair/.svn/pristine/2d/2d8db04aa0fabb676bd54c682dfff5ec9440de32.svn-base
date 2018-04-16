@@ -1,0 +1,80 @@
+package com.etc.repair.web;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.etc.repair.biz.CityBiz;
+
+/**
+ * Servlet implementation class CityServlet
+ */
+public class CityServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    CityBiz cBiz = new CityBiz();   
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CityServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String method = request.getParameter("method");
+		if("getProvince".equals(method)){
+			getProvince(request,response);
+		}else if("getCity".equals(method)){
+			getCity(request,response);
+		}
+		//getProvince(request,response);
+	}
+
+	private void getCity(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		String cityList;
+		Integer provinceId = Integer.parseInt(request.getParameter("provinceId"));
+		try {
+			cityList = cBiz.getCity(provinceId);
+			//System.out.println(provinceList);
+			response.getWriter().print(cityList);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void getProvince(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		String provinceList;
+		try {
+			provinceList = cBiz.getProvince();
+			//System.out.println(provinceList);
+			response.getWriter().print(provinceList);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

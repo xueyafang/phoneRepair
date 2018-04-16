@@ -1,0 +1,102 @@
+package com.etc.repair.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.Orders;
+
+public class OrderDao extends BaseDao{
+
+	public int insertOrder(String oid, int sid, int uid, Date date) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		int num = Update("insert into orders(oid,sid,uid,date) values(?,?,?,?)", oid,sid,uid,date);
+		return num;
+	}
+
+	public List<Object> showOrder(String oid) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		pstmt = con.prepareStatement("select u.name,u.username,u.score,s.sname,s.spic,o.* from user u,store s,orders o where u.uid=o.uid and s.sid=o.sid and o.oid=?");
+		pstmt.setString(1, oid);
+		rs = pstmt.executeQuery();
+		List<Object> list = new ArrayList<Object>();
+		while(rs.next()){
+			list.add(rs.getString("s.sname"));
+			list.add(rs.getString("u.name"));
+			list.add(rs.getString("o.oid"));
+			list.add(rs.getString("s.spic"));
+			list.add(rs.getString("o.fault"));
+			list.add(rs.getDate("o.date"));
+			list.add(rs.getDouble("o.price"));
+			list.add(rs.getInt("u.score"));
+			list.add(rs.getInt("o.ustate"));
+			list.add(rs.getInt("o.sstate"));
+			list.add(rs.getInt("o.uid"));
+			list.add(rs.getInt("o.sid"));
+			list.add(rs.getString("u.username"));
+		}
+		return list;
+	}
+
+	public int updateUstate(String oid) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		int num = Update("update orders set ustate=1 where oid=?", oid);
+		return num;
+	}
+
+	public int updateSstate(String oid, String fault, double price) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		int num = Update("update orders set sstate=1,fault=?,price=? where oid=?", fault,price,oid);
+		return num;
+	}
+
+	public List<Orders> getAllOrder(int currPage, int pageSize) throws SQLException {
+		pstmt = con.prepareStatement("select o.*,u.username,s.sname from orders o,user u,store s where o.uid=u.uid and o.sid=s.sid limit ?,?");
+		pstmt.setInt(1, (currPage-1)*pageSize);
+		pstmt.setInt(2, pageSize);
+		rs = pstmt.executeQuery();
+		List<Orders> list = new ArrayList<Orders>();
+		while(rs.next()){
+			Orders order = new Orders();
+			order.setOid(rs.getString("o.oid"));
+			order.setUsername(rs.getString("u.username"));
+			order.setSname(rs.getString("sname"));
+			order.setPrice(rs.getDouble("o.price"));
+			order.setSstate(rs.getInt("o.sstate"));
+			order.setUstate(rs.getInt("o.ustate"));
+			order.setDate(rs.getDate("o.date"));
+			order.setFault(rs.getString("o.fault"));
+			list.add(order);
+		}
+		return list;
+	}
+
+	public int getOrderCount() throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		List<Orders> list = query("select * from orders", new Object[]{}, Orders.class);
+		return list.size();
+	}
+
+	public int removeOrder(String oid) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		int num = Update("delete from orders where oid=?", oid);
+		return num;
+	}
+
+	public List<Object> showOrders(int uid) throws SQLException {
+		System.out.println("请求来了3");
+		pstmt = con.prepareStatement("select oid,sname,date from orders,store where orders.sid=store.sid and uid=?");
+		pstmt.setInt(1, uid);
+		rs = pstmt.executeQuery();
+		List<Object> list1 = new ArrayList<Object>();
+		while(rs.next()){
+			List<Object> list = new ArrayList<Object>();
+			list.add(rs.getString("orders.oid"));
+			list.add(rs.getString("store.sname"));
+			list.add(rs.getString("orders.date"));
+			list1.add(list);
+		}
+		System.out.println(list1);
+		return list1;
+	}
+
+}

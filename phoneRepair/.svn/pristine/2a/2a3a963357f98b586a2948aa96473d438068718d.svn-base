@@ -1,0 +1,22 @@
+import java.util.IdentityHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+
+public class Test1 {
+	public static void main(String[] args) {
+		Map<String ,String> map = new IdentityHashMap<String ,String>();
+		String str1 = new String("北京");
+		String str2 = new String("北京");
+		map.put(str1.toString(), "昌平");
+		map.put(str2.toString(), "昌平");
+		map.put("上海", "虹口");
+		map.put("北京", "朝阳"); 
+		
+		for (Entry<String, String> entry : map.entrySet()) { 
+		    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());  
+		} 
+		
+		System.out.println(str1.equals("北京"));
+	}
+}

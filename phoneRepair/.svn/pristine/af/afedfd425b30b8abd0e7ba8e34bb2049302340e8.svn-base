@@ -1,0 +1,83 @@
+package com.etc.repair.web;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.etc.repair.biz.OrderBiz;
+
+/**
+ * Servlet implementation class OrderServlet
+ */
+public class OrderServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	OrderBiz oBiz = new OrderBiz();
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public OrderServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String method = request.getParameter("method");
+		if("insertOrder".equals(method)){
+			try {
+				insertOrder(request,response);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+		}
+	}
+
+	/**
+	 * 生成订单
+	 * @param request
+	 * @param response
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws FileNotFoundException 
+	 * @throws ClassNotFoundException 
+	 * @throws ServletException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 */
+	private void insertOrder(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, ServletException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		String oid = UUID.randomUUID().toString().replaceAll("-", "");
+		int sid = Integer.parseInt(request.getParameter("sid"));
+		int uid = Integer.parseInt(request.getParameter("uid"));
+		Date date = new Date();
+		int num = oBiz.insertOrder(oid,sid,uid,date);
+		//显示订单
+		List<Object> list = oBiz.showOrder(oid);
+		request.setAttribute("list", list);
+		request.getRequestDispatcher("jsp/order.jsp").forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

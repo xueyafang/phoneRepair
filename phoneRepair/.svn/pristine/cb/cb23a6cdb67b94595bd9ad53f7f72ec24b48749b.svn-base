@@ -1,0 +1,37 @@
+package com.etc.repair.dao;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.User;
+
+public class UserDao extends BaseDao{
+	/**
+	 * 登录
+	 * 
+	 * @param username
+	 * @param password
+	 * @return
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 * @throws InvocationTargetException
+	 * @throws IllegalArgumentException
+	 * @throws ClassNotFoundException
+	 */
+	public User login(String username, String password) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		//查询是否有这个用户
+		List<User> list = query
+				("select * from user where username=? and password=?", new Object[]{username,password}, User.class);
+		//如果有这个用户，返回该用户，如果没有则返回空
+		if(list.size()>0){
+			return list.get(0);
+		}else{
+			return null;
+		}
+	}
+}

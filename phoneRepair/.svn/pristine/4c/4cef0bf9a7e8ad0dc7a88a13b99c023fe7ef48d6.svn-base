@@ -1,0 +1,43 @@
+package com.etc.repair.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.Store;
+
+public class StoreDao extends BaseDao{
+
+	public boolean isExistStore(String susername) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		List<Store> list = query("select * from store where susername=?", new Object[]{susername}, Store.class);
+		if(list.size()==0){
+			//不存在
+			return false;
+		}
+		return true;
+	}
+
+	public boolean regist(String susername, String spassword, String sname, String saddress, String spic, String stime,
+			String sdesc) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		int count = Update("insert into store(susername,spassword,sname,saddress,spic,stime,sdesc) values(?,?,?,?,?,?,?)", susername,spassword,sname,saddress,spic,stime,sdesc);
+		System.out.println(count);
+		return (count==1)?true:false;
+	}
+
+	public Store login(String susername, String spassword) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		List<Store> list = query("select * from store where susername=? and spassword=?", new Object[]{susername, spassword},Store.class);
+		Store store = null;
+		if(list!=null){
+			store = list.get(0);
+		}
+		
+		return store;
+	}
+
+}

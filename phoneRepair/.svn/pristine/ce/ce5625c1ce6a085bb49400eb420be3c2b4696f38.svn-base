@@ -1,0 +1,1 @@
+geetest_1506302253077({"status": "success", "data": {"feedback": "", "s": "4e61434b", "api_server": "api.geetest.com", "theme_version": "1.4.6", "logo": false, "static_servers": ["static.geetest.com", "dn-staticdown.qbox.me"], "c": [12, 58, 98, 36, 43, 95, 62, 15, 12], "theme": "wind"}})

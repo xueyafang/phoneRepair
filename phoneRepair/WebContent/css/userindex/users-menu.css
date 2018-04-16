@@ -1,0 +1,155 @@
+/* 
+* @Author: Marte
+* @Date:   2016-04-25 16:34:48
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-04-28 14:09:04
+*/
+.con-left{
+    width: 265px;
+    border-radius: 5px;
+    float: left;
+    background-color: #fff;
+	margin-bottom:15px;
+}
+.con-left .con-l-t{
+   text-align: center;
+   margin-top: 30px;
+}
+.con-left .con-l-t img{
+   border-radius: 50%;
+   vertical-align: middle;
+   display: inline-block;
+   width:156px;
+   height:156px;
+   border:1px solid #eee;
+}
+.con-left .con-l-t p{
+    line-height: 32px;
+}
+.con-left .con-l-t .name{
+   color:#313131;
+   line-height:28px;
+   margin-top:8px;
+}
+.con-left .con-l-t .name span{
+	padding:0 7px;
+	height:18px;
+	line-height:18px;
+	display:inline-block;
+	color:#fff;
+	border-radius:2px;
+	margin-left:5px;
+	font-size:12px;
+}
+.con-left .con-l-t .name .store{
+	background-color:#ff7330;
+}
+.con-left .con-l-t .name .vip{
+	background-color:#debc00;
+}
+.con-left .con-l-t .name .novip{
+	background-color:#dcdcdc;
+}
+.con-left .con-l-t .time{
+	color:#898989;
+	font-size: 12px;
+}
+.con-left .con-l-t .openVip{
+	text-align:center;
+	margin-top:6px;
+}
+.con-left .con-l-t .openVip a{
+	background-color:#ff4444;
+	padding:0 16px;
+	color:#fff;
+	height:33px;
+	border-radius:3px;
+	cursor:pointer;
+	display:inline-block;
+	text-align:center;
+	line-height:33px;
+}
+.con-left .con-l-t .level{
+    font-size: 12px;
+    color: #a0a0a0;
+}
+.con-left .con-l-t .level img{
+    margin-left: 5px;
+	width:auto;
+}
+.con-left .con-l-b{
+    margin-top: 28px;
+}
+.con-left .con-l-b .level2 li{
+    text-align: left;
+	padding:0 10px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #313131;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+}
+.con-left .con-l-b .level2{
+	margin:0 ;
+}
+.con-left .con-l-b .level2{
+	border-top:1px solid #eee;
+}
+.con-left .con-l-b .level2 h3{
+	position:relative;
+	font-size:14px;
+	line-height:42px;
+}
+.con-left .con-l-b .level2 h3 p{
+	display:inline-block;
+	float:left;
+	height:42px;
+	width:188px;
+}
+.con-left .con-l-b .level2 h3 a{
+	color:#313131;
+	display:inline-block;
+	float:left;
+}
+.con-left .con-l-b .level2 h3 a:hover{
+	color:#40bb8c;
+}
+.con-left .con-l-b .level2 h3 span{
+	width:13px;
+	height:7px;
+	background:url(../images/2016/icon.png) -200px -256px ;
+	display:inline-block;
+	position:absolute;
+	right:10px;
+	top:14px;
+}
+.con-left .con-l-b .level2 .levelitem.open{
+	height:auto;
+}
+.con-left .con-l-b .level2 .levelitem.open h3 span{
+	background-position: -46px -534px;
+}
+.con-left .con-l-b .level2 .levelitem.open .level3{
+	display:block;
+}
+.con-left .con-l-b .level3{
+	padding:0 15px;
+	display:none;
+}
+.con-left .con-l-b .level3 li{
+	border-bottom:0 none;
+}
+.con-left .con-l-b .level3 li a{
+	display:block;
+	height:100%;
+	width:100%;
+}
+.con-left .con-l-b .level3 li.current a{
+	color:#40bb8c;
+}
+.con p{
+	margin:0;
+}
+.border_no{
+	border:0 none;
+}

@@ -1,0 +1,1114 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="../css/list/style1503546983737.css">
+        <title>手机维修 - 专业的手机、平板维修平台</title>
+        <meta charset="utf-8">
+		<link rel="shortcut icon" href="http://www.caobao.com/Public/Home/images/coins/logoIcon.png">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=Edge">
+		<meta name="Keywords" content="手机维修,平板维修,苹果手机维修,草包网">
+		<meta name="Description" content="国内专业的手机维修、平板维修平台，以地区和官方在线报价并为客户提供快速上门维修、到店维修、邮寄维修服务。手机维修、平板维修首选草包网，统一真实报价、安全可靠、原厂配件。">
+		<meta name="baidu-site-verification" content="2x3g9fsDlz">
+		<meta name="applicable-device" content="pc">
+		<link rel="stylesheet" type="text/css" href="../css/list/same.css">
+		<link rel="stylesheet" type="text/css" href="../css/list/xcConfirm.css">
+		<!-- <link rel="stylesheet" href="/Public/Home/css/header.css" /> -->
+        <!-- 自定义CSS文件 部分 -->
+		
+    <link rel="stylesheet" href="../css/list/index.css">
+
+		<!-- 自定义CSS文件 结束 -->
+		
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../img/list/jquery-1.htm"></script>
+		<script src="../img/list/html5shiv.js"></script>
+		
+		<!-- 自定义顶部js文件 部分 -->
+		
+	<script type="text/javascript" src="../img/list/jquery_002.js"></script>
+	<script type="text/javascript" src="../img/list/jquery.js"></script>
+	<script type="text/javascript" src="../img/list/jquery.htm"></script>
+
+		<!-- 自定义顶部js文件 结束 -->
+		
+	<style type="text/css">.amap-container{cursor:url(http://webapi.amap.com/theme/v1.3/openhand.cur),default;}.amap-drag{cursor:url(http://webapi.amap.com/theme/v1.3/closedhand.cur),default;}</style></head>
+	<body>
+		<!-- 头部部分 开始 -->
+		<div class="header">
+			<div class="header-out">
+				<div class="header_top wrap" style="height:60px">
+					<link rel="stylesheet" type="text/css" href="../css/list/widget-user.css">
+					<!--logo展示-->
+					<img src="../img/logo.png" width="50px" height="50px" style="margin-top:5px;"/>
+					&nbsp;<font size="5">咻一修</font>
+					<div class="tabnav">
+		
+					<ul class="tabbd">
+					<!-- <li class="by"><a href="/buy/cart.html"><i class="buycar"></i><span>(0)</span></a></li> -->
+					<li class="login tabbdli" style="margin-top:15px"><a rel="nofollow" href="http://www.caobao.com/users/login.html">登录</a></li>
+					<li class="line tabbdli" style="margin-top:15px">|</li>
+					<!--<li><a rel="nofollow" href="/users/regist.html">注册</a></li>-->
+					<li class="tabbdli" style="margin-top:15px"><a rel="nofollow" href="http://www.caobao.com/users/login/type/weixin.html">注册</a></li>
+					</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- 头部部分 结束 -->
+		
+		<!-- 主体部分 开始 -->
+		
+    <div class="con">
+        <!-- 首页维修店 -->
+        <div class="repair_store wrap">
+            <h2><a href="http://www.caobao.com/repairer_list/1.html">北京市维修店</a></h2>
+            <div class="nav_bar clearfix">
+                <dl class="clearfix">
+                    <dt><i></i>北京市</dt>
+					<dd class="current">朝阳区</dd><dd>海淀区</dd><dd>昌平区</dd><dd>西城区</dd><dd>丰台区</dd><dd>东城区</dd><dd>大兴区</dd><dd>房山区</dd><dd>市辖区</dd><dd>石景山区</dd><dd>通州区</dd><dd>平谷区</dd><dd>崇文区</dd><dd>宣武区</dd><dd>顺义区</dd><dd>密云县</dd><dd>通县</dd><dd>门头沟区</dd><dd>怀柔区</dd><dd>延庆县</dd>                </dl>
+                <a href="javascript:void(0);" class="more-city" id="moreCity">更多<i class="icon-arrow"></i></a>
+            </div>
+			            <div class="store_lst clearfix current">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/739.html"><img src="../img/list/e0722aa477c05.png" alt="极客修（朝阳维修中心）" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/739.html">极客修（朝阳维修中心）</a>
+									<b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b><b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+									<span class="chain id_icon">连锁</span>									<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：建国路88号大望路SOHO现代城C座7层708室（地铁1号线/14号线大望路站B口出左转往西100米）</span><span class="map_icon" data-deg="116.475819,39.907396"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1577.html"><img src="../img/list/picc.png" alt="晓宝配件" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1577.html">晓宝配件</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 VIVO 乐视</p>
+                                <p><span class="address_detial">地址：十八里店吕家营</span><span class="map_icon" data-deg="114.103564,22.808355"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1877.html"><img src="../img/list/picc.png" alt="苹果专业维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1877.html">苹果专业维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果</p>
+                                <p><span class="address_detial">地址：朝阳区物资学院路</span><span class="map_icon" data-deg="116.639316,39.926801"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1881.html"><img src="../img/list/picc.png" alt="苹果手机上门维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1881.html">苹果手机上门维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：北京工业大学附近</span><span class="map_icon" data-deg="116.374262,39.889340"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1908.html"><img src="../img/list/picc.png" alt="专业苹果维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1908.html">专业苹果维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：东坝红松园</span><span class="map_icon" data-deg="116.550519,39.966128"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1909.html"><img src="../img/list/picc.png" alt="曹师傅手机维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1909.html">曹师傅手机维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 VIVO</p>
+                                <p><span class="address_detial">地址：十八里店横街子</span><span class="map_icon" data-deg="116.504909,39.827510"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1445.html"><img src="../img/list/picc.png" alt="云闪修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1445.html">云闪修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为</p>
+                                <p><span class="address_detial">地址：魏公村韦伯时代</span><span class="map_icon" data-deg="116.322380,39.954035"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1543.html"><img src="../img/list/picc.png" alt="专业手机维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1543.html">专业手机维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族</p>
+                                <p><span class="address_detial">地址：全北京上门维修手机</span><span class="map_icon" data-deg="116.282780,40.099067"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1320.html"><img src="../img/list/45b426015a332.jpg" alt="北京伟视科技" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1320.html">北京伟视科技</a>
+									<b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：西二旗</span><span class="map_icon" data-deg="116.377505,40.094980"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/692.html"><img src="../img/list/be10334575103.jpg" alt="国人复兴路店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/692.html">国人复兴路店</a>
+									<b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b><b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族</p>
+                                <p><span class="address_detial">地址：复兴路甲49号</span><span class="map_icon" data-deg="116.299341,39.908508"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/775.html"><img src="../img/list/5875e80f82a13.jpg" alt="谊华数码" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/775.html">谊华数码</a>
+									<b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b><b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果</p>
+                                <p><span class="address_detial">地址：鼎好大厦B座地下一层B1868室</span><span class="map_icon" data-deg="116.314293,39.983588"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/905.html"><img src="../img/list/ea67ad20c336e.jpg" alt="北京市东凯科技信息有限公司" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/905.html">北京市东凯科技信息有限公司</a>
+									<b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b><b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：帝海集团（国美大厦）D座2316室</span><span class="map_icon" data-deg="116.312339,39.909194"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1461.html"><img src="../img/list/picc.png" alt="速信维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1461.html">速信维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族</p>
+                                <p><span class="address_detial">地址：北京昌平区生命科学园珠江摩尔</span><span class="map_icon" data-deg="116.279582,40.109127"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1531.html"><img src="../img/list/picc.png" alt="10分到家" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1531.html">10分到家</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：昌平区回龙观镇</span><span class="map_icon" data-deg="116.301624,40.093626"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1714.html"><img src="../img/list/picc.png" alt="日理万机维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1714.html">日理万机维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为</p>
+                                <p><span class="address_detial">地址：天通苑西三区3号楼1401</span><span class="map_icon" data-deg="0.000000,0.000000"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/392.html"><img src="../img/list/a22d1f4f73e3e.jpg" alt="中国移动（宏伟顺发通讯）" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/392.html">中国移动（宏伟顺发通讯）</a>
+									<b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族</p>
+                                <p><span class="address_detial">地址：沙河镇小沙河村</span><span class="map_icon" data-deg="116.326868,40.122513"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/253.html"><img src="../img/list/picc.png" alt="三星体验店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/253.html">三星体验店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 VIVO 魅族</p>
+                                <p><span class="address_detial">地址：城北街道鼓楼西街12号三星体验店（新华书店对面）</span><span class="map_icon" data-deg="116.227066,40.224617"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/966.html"><img src="../img/list/36faa547c5b12.jpg" alt="乐乐达北京市昌平服务中心福苑小区店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/966.html">乐乐达北京市昌平服务中心福苑小区店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：北七家镇宏福苑小区16号底商</span><span class="map_icon" data-deg="116.363636,40.110375"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1145.html"><img src="../img/list/259aad2744ac9.jpg" alt="中国移动四平园店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1145.html">中国移动四平园店</a>
+									<b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：四平园小区2号楼底商2-6</span><span class="map_icon" data-deg="116.381732,39.882218"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/844.html"><img src="../img/list/picc.png" alt="十分到家" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/844.html">十分到家</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：德胜门外大街10号TCL大厦2楼（TCL十分到家）</span><span class="map_icon" data-deg="116.380403,39.963445"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1135.html"><img src="../img/list/picc.png" alt="中国移动手机维修店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1135.html">中国移动手机维修店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：菜市口大街13号中信城物美店</span><span class="map_icon" data-deg="116.374022,39.881698"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1140.html"><img src="../img/list/ba51ad471d44a.jpg" alt="中国移动白纸坊店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1140.html">中国移动白纸坊店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：白纸坊西街44号（味多美往东50米）</span><span class="map_icon" data-deg="116.354254,39.877734"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1316.html"><img src="../img/list/picc.png" alt="宇航通信" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1316.html">宇航通信</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：陶然亭公园向北二百米路西手机专卖店</span><span class="map_icon" data-deg="116.381743,39.882242"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1851.html"><img src="../img/list/picc.png" alt="手机超市" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1851.html">手机超市</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 华为 OPPO VIVO 魅族</p>
+                                <p><span class="address_detial">地址：北京市西城区马连道南街红莲北里15号楼底商15-2中国电信手机超市</span><span class="map_icon" data-deg="116.332537,39.881626"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1495.html"><img src="../img/list/5ab58d88cf04b.jpg" alt="身边手机维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1495.html">身边手机维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为</p>
+                                <p><span class="address_detial">地址：东铁营街道成寿寺路99号</span><span class="map_icon" data-deg="116.445876,39.845623"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1726.html"><img src="../img/list/picc.png" alt="品牌手机专业技术维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1726.html">品牌手机专业技术维修</a>
+									<b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b><b><img src="../img/list/rankicon1.png" title="2级" alt="2级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：方仕国际商贸城二楼327号</span><span class="map_icon" data-deg="116.400605,39.855057"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/822.html"><img src="../img/list/20bde30bc6c25.png" alt="金牌手机维修中心" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/822.html">金牌手机维修中心</a>
+									<b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b><b><img src="../img/list/rankicon1.png" title="3级" alt="3级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：丰台区新发地海南厅三层336</span><span class="map_icon" data-deg="116.343909,39.810203"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/962.html"><img src="../img/list/36faa547c5b12.jpg" alt="乐乐达北京苹果售后服务中心" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/962.html">乐乐达北京苹果售后服务中心</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：南庭新苑北区移动营业厅内</span><span class="map_icon" data-deg="116.400483,39.838492"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1752.html"><img src="../img/list/03b57c13b58ce.jpg" alt="公益西桥地铁手机店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1752.html">公益西桥地铁手机店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：地铁4号线公益西桥站元沃地铁商城</span><span class="map_icon" data-deg="116.380580,39.861110"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1778.html"><img src="../img/list/picc.png" alt="E修乐手机网" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1778.html">E修乐手机网</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：方庄南里2号亚胜铂第公馆B座</span><span class="map_icon" data-deg="116.439342,39.858057"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1165.html"><img src="../img/list/24eacf267869f.jpg" alt="手机维修中心（中国电信合作厅）" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1165.html">手机维修中心（中国电信合作厅）</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：右安门外大姐街3号（中国电信）</span><span class="map_icon" data-deg="116.364145,39.866033"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1205.html"><img src="../img/list/picc.png" alt="荣远科技手机专卖店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1205.html">荣远科技手机专卖店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：永定门外安乐林路22号天天家园3号楼-103</span><span class="map_icon" data-deg="116.405402,39.865175"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1346.html"><img src="../img/list/picc.png" alt="中国电信，中国移动通信" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1346.html">中国电信，中国移动通信</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：东四南大街17号中国电信</span><span class="map_icon" data-deg="116.416811,39.922973"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1376.html"><img src="../img/list/picc.png" alt="跃千愁的小店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1376.html">跃千愁的小店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：东城区交道口东大街113号天客隆超市内中国移动</span><span class="map_icon" data-deg="116.409656,39.940884"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1507.html"><img src="../img/list/picc.png" alt="北京市远通信达通讯" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1507.html">北京市远通信达通讯</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 乐视</p>
+                                <p><span class="address_detial">地址：安定门内大街115号</span><span class="map_icon" data-deg="116.408243,39.945838"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/968.html"><img src="../img/list/36faa547c5b12.jpg" alt="乐乐达北京大兴维修服务中心" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/968.html">乐乐达北京大兴维修服务中心</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 小米 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：地铁高米店北站 郁花园三里北侧底商 苹果体验店</span><span class="map_icon" data-deg="116.331471,39.772405"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/995.html"><img src="../img/list/5328293897559.jpg" alt="宏达高科手机维修站" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/995.html">宏达高科手机维修站</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：黄村镇郁花园一里底商老家肉饼对面</span><span class="map_icon" data-deg="116.335039,39.775833"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1098.html"><img src="../img/list/picc.png" alt="心怡通讯" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1098.html">心怡通讯</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：采育镇大皮营一村</span><span class="map_icon" data-deg="116.654649,39.624006"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1479.html"><img src="../img/list/picc.png" alt="北京青竹电脑服务部" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1479.html">北京青竹电脑服务部</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：旧宫镇成和园小区12号楼5单元一层</span><span class="map_icon" data-deg="116.435011,39.816139"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1537.html"><img src="../img/list/6c6fee4f40b25.jpg" alt="北京未来佳兴商贸中心" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1537.html">北京未来佳兴商贸中心</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果</p>
+                                <p><span class="address_detial">地址：黄村镇簧徐路25号</span><span class="map_icon" data-deg="116.349609,39.706660"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/629.html"><img src="../img/list/picc.png" alt="北京禹午飞扬手机电脑维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/629.html">北京禹午飞扬手机电脑维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：窦店镇兴隆庄村</span><span class="map_icon" data-deg="116.155139,39.640243"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1048.html"><img src="../img/list/a38ab4440c47f.jpg" alt="专业维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1048.html">专业维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 OPPO VIVO</p>
+                                <p><span class="address_detial">地址：良乡拱辰大街94</span><span class="map_icon" data-deg="116.346660,39.974760"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1156.html"><img src="../img/list/picc.png" alt="睿熙通讯" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1156.html">睿熙通讯</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：房山区良乡行宫园小区</span><span class="map_icon" data-deg="116.147020,39.749054"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1363.html"><img src="../img/list/339aa84e697b9.jpg" alt="天成维修" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1363.html">天成维修</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果</p>
+                                <p><span class="address_detial">地址：石榴庄</span><span class="map_icon" data-deg="116.412156,39.924616"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1746.html"><img src="../img/list/picc.png" alt="换屏哥" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1746.html">换屏哥</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 华为</p>
+                                <p><span class="address_detial">地址：西城区裕民东路5号瑞得大厦</span><span class="map_icon" data-deg="116.390737,39.971033"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/288.html"><img src="../img/list/picc.png" alt="京西电子" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/288.html">京西电子</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：鲁谷路68号京西珠宝三层 c180</span><span class="map_icon" data-deg="116.219368,39.901147"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1672.html"><img src="../img/list/picc.png" alt="北京轩云创世商贸有限公司" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1672.html">北京轩云创世商贸有限公司</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：鲁谷路68号京西珠宝3层66号</span><span class="map_icon" data-deg="116.246877,39.903199"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1127.html"><img src="../img/list/21fadf3eb2356.jpg" alt="宏皓科技新华大街店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1127.html">宏皓科技新华大街店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：新华东街人民商场苏宁易购一层手机维修中心</span><span class="map_icon" data-deg="116.670437,39.908346"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1192.html"><img src="../img/list/4acaca7ff0edd.jpg" alt="顺安科技" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1192.html">顺安科技</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：九棵树京通罗斯福地下一层B1</span><span class="map_icon" data-deg="116.658988,39.889442"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/152.html"><img src="../img/list/picc.png" alt="三星苹果体验店" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/152.html">三星苹果体验店</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果</p>
+                                <p><span class="address_detial">地址：承平园小区甲1-12 三星苹果体验店</span><span class="map_icon" data-deg="117.111743,40.144850"></span></p>
+                            </div>
+                        </li><li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/281.html"><img src="../img/list/picc.png" alt="北京曼托斯通讯" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/281.html">北京曼托斯通讯</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：新平北路57-18（移动公司旁边）</span><span class="map_icon" data-deg="117.106202,40.145834"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1740.html"><img src="../img/list/picc.png" alt="金泽科技" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1740.html">金泽科技</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：磁器口标杆胡同26号</span><span class="map_icon" data-deg="116.424970,39.892499"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1152.html"><img src="../img/list/picc.png" alt="中国移动" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1152.html">中国移动</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：宣武门西草厂102</span><span class="map_icon" data-deg="116.374908,39.893080"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/275.html"><img src="../img/list/picc.png" alt="微店连锁" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/275.html">微店连锁</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p></p>
+                                <p><span class="address_detial">地址：南彩镇彩俸北区6-9号</span><span class="map_icon" data-deg="116.700801,40.132538"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div>            <div class="store_lst clearfix ">
+                <div class="small_pic">
+                    <ul class="clearfix">
+						<li class="clearfix first">
+                            <div class="small"><a href="http://www.caobao.com/repairer/1039.html"><img src="../img/list/picc.png" alt="众成通讯" onerror="javascript:this.src='/Public/Home/images/2016/picc.png';" width="93"></a></div>
+                            <div class="pic_bd">
+                                <p class="store_name">
+									<a href="http://www.caobao.com/repairer/1039.html">众成通讯</a>
+									<b><img src="../img/list/rankicon1.png" title="1级" alt="1级" width="16"></b>								</p>
+								<p>
+									<span class="Authentication id_icon">认证</span>
+																		<!--<span class="custemers id_icon">售后</span>
+									<span class="guarantee id_icon">担保</span>-->
+								</p>
+                                <p>主修：苹果 三星 小米 华为 OPPO VIVO 魅族 乐视</p>
+                                <p><span class="address_detial">地址：长安小区甲26号楼4单元101底商</span><span class="map_icon" data-deg="116.843804,40.373272"></span></p>
+                            </div>
+                        </li>                    </ul>
+                </div>
+            </div><div class="none store_lst clearfix ">
+				<a href="http://www.caobao.com/index/special.html" target="_blank"><img src="../img/list/long.jpg" title="赶紧加入我们吧"></a>
+            </div>
+			<div class="none store_lst clearfix ">
+				<a href="http://www.caobao.com/index/special.html" target="_blank"><img src="../img/list/long.jpg" title="赶紧加入我们吧"></a>
+            </div>
+			<div class="none store_lst clearfix ">
+				<a href="http://www.caobao.com/index/special.html" target="_blank"><img src="../img/list/long.jpg" title="赶紧加入我们吧"></a>
+            </div>
+			<div class="none store_lst clearfix ">
+				<a href="http://www.caobao.com/index/special.html" target="_blank"><img src="../img/list/long.jpg" title="赶紧加入我们吧"></a>
+            </div>
+			        </div>
+			</div>
+		</div>
+		<!-- 快捷栏目 -->
+        <div class="customer-service wrap">
+            <ul class="clearfix">
+                <li class="first">
+                    <p><a href="http://bbs.caobao.com/wenda.html">问题解答</a></p>
+                    <p class="bottom"><a href="http://bbs.caobao.com/jiqiao.html">技巧分享</a></p>
+                </li>
+                <li class="second">
+                    <p><a href="http://www.caobao.com/article/35.html">消费保障</a></p>
+                    <span><a href="http://www.caobao.com/article/35.html">价格保护</a><a href="http://www.caobao.com/article/31.html">退换货</a></span>
+                </li>
+                <li class="third">
+                    <p><a href="http://www.caobao.com/article/13.html">新手指南</a></p>
+                    <span><a href="http://www.caobao.com/article/40.html">维修店加入流程</a><a href="http://www.caobao.com/article/37.html">折价换屏</a></span>
+                </li>
+                <li class="last">
+                    <p><a href="http://www.caobao.com/article/38.html">关于我们</a></p>
+                    <span><a href="http://www.caobao.com/article/39.html">联系我们</a><a href="http://www.caobao.com/article/42.html">人才招聘</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<!-- 地图 -->
+	<div class="dark"></div>
+	<div class="bigbox posF" style="height:500px;width:700px;">
+		<span class="posA off">&nbsp;</span>
+		<div id="mapBx" style="height:500px;width:700px;"></div>
+	</div>
+	<div id="map" style="display:none;"></div>
+	<script name="baidu-koubei-verification" src="../img/list/b8b3e2020fe53dcaa8e81dd0816ba1a8.js"></script>
+
+		<!-- 主体部分 结束 -->
+		
+		
+		<!-- 页脚部分 开始 -->
+		<link rel="stylesheet" type="text/css" href="../css/list/footer.css">
+
+<!--页脚 开始-->
+<div class="FF">
+	<div class="footer wrap">
+		<div class="row-fluids clearfix">
+			<div class="span7">
+				<h3>故障分类：</h3>
+				<ul class="clearfix">
+					<li class="nLi">
+							<h4>屏幕</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/1.html" title="屏碎 显示正常">屏碎 显示正常</a></li><li><a target="_blank" href="http://www.caobao.com/fault/2.html" title="手机屏幕失灵">手机屏幕失灵</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>电池/充电/开机</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/3.html" title="续航时间不足">续航时间不足</a></li><li><a target="_blank" href="http://www.caobao.com/fault/7.html" title="手机不能开机">手机不能开机</a></li><li><a target="_blank" href="http://www.caobao.com/fault/8.html" title="不充电不联机">不充电不联机</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>按键</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/4.html" title="按开机键不能开机">按开机键不能开机</a></li><li><a target="_blank" href="http://www.caobao.com/fault/9.html" title="手机HOME键失灵">手机HOME键失灵</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>声音/震动</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/5.html" title="手机听筒没有声音">手机听筒没有声音</a></li><li><a target="_blank" href="http://www.caobao.com/fault/6.html" title="播放音乐没有声音">播放音乐没有声音</a></li><li><a target="_blank" href="http://www.caobao.com/fault/10.html" title="无法调节音量大小">无法调节音量大小</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>拍照/录像</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/11.html" title="切换前摄像头黑屏">切换前摄像头黑屏</a></li><li><a target="_blank" href="http://www.caobao.com/fault/12.html" title="手机拍照模糊不清">手机拍照模糊不清</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>外壳/边框</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/14.html" title="后壳磨损变形">后壳磨损变形</a></li><li><a target="_blank" href="http://www.caobao.com/fault/15.html" title="手机中框变形">手机中框变形</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>进水/主板</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/13.html" title="手机进水">手机进水</a></li>							</ol>
+						</li>				</ul>			</div><!-- span7 --> 
+			<div class="span30">
+				<dl class="clearfix">
+					<dt class="img fl"></dt>
+					<dd class="fl">
+						<h4>客服热线</h4>
+						<p class="tel">400-888-8888</p>
+						<p class="supp">仅收市话费用</p>
+						<p class="workTime">(周一至周日 9:00-18:00)</p>
+					</dd>
+				</dl>
+			</div>
+			<!-- <div class="span20"> -->
+				<!-- <span class="masterLogin"><a rel="nofollow" href="/system/login.html" target="_blank">维修店登录&gt</a></span> -->
+			<!-- </div> -->
+		</div><!-- row-fluids -->
+		<!-- 友情链接 -->
+		<div class="frdLink wrap">
+			<dl class="clearfix frdLink">
+				<dd>
+					友情链接：
+					<a href="http://www.caobao.com/" target="_blank">手机维修</a><a href="http://bbs.eastsea.com.cn/" target="_blank">东海论坛</a><a href="http://www.rootbbs.com/" target="_blank">机轩手机维修论坛</a><a href="http://www.caobao.com/video/" target="_blank">手机维修视频</a><a href="http://www.szlande.com/" target="_blank">兰德手机培训</a><a href="http://news.aitaocui.cn/" target="_blank">翡翠</a><a href="http://www.shuajizhushou.cn/" target="_blank">刷机助手</a><a href="http://www.juyouhuishou.com/" target="_blank">手机回收网</a><a href="http://bbs.caobao.com/" target="_blank">手机维修论坛</a><a href="http://bbs.cnmo.com/" target="_blank">手机中国</a><a href="http://www.159shouji.com/" target="_blank">手机批发</a><a href="http://mobile.qudong.com/" target="_blank">手机资讯</a><a href="http://www.veryol.com/" target="_blank">非常在线</a><a href="http://www.shouji10086.com/" target="_blank">性价比高的手机</a><a href="http://www.lifesense.com/" target="_blank">智能手环</a><a href="http://www.360zhuti.com/" target="_blank">360安卓主题</a>					<a href="http://www.caobao.com/link/links.html" target="_blank" alt="草包友链" title="草包友链">友链申请</a>
+				</dd>
+			</dl>
+		</div>		<div class="row-fluids safeInfo">
+			
+			<a rel="nofollow" target="_blank" href="http://www.cyberpolice.cn/wfjb/"><img src="../img/list/cyberpolice.jpg" alt="公共信息安全网络监察" height="34"></a>
+			<a rel="nofollow" key="56777671efbfb07fa5f91f9e" logo_size="124x47" logo_type="business" href="http://www.anquan.org/authenticate/cert/?site=www.caobao.com&amp;at=business" target="_blank"><img src="../img/list/hy_124x47.png" alt="安全联盟认证" style="border: none;" height="34"></a>
+			<a rel="nofollow" target="_blank" id="_pingansec_bottomimagelarge_shiming" href="http://si.trustutn.org/info?sn=868170109026620625771&amp;certType=1"><img src="../img/list/bottom_large_img.png" height="34"></a>
+		</div>
+		<div class="row-fluids">
+			<p class="CR">Copyright @ 2010-2017 咻一修网络科技有限公司 版权所有 违者必究 </p>
+		</div>
+	</div>
+</div>
+<!--页脚 结束-->        <!-- 页脚部分 结束 -->  
+		
+		<!-- 侧边栏 开始 -->  
+		<link rel="stylesheet" type="text/css" href="../css/list/sidebar.css">
+
+<!--侧栏 开始-->
+<div class="cb_sidebar">
+	<span class="open"></span>
+	<div class="cb_sidebar_bg"></div>
+	<div class="cb_sidebar_tabs">
+		<ul>
+			<li class="cbwlogo">
+				<a href="http://www.caobao.com/" title="草包网">
+					<i></i>
+				</a>
+			</li>
+			<li class="cart">
+				<a href="http://www.caobao.com/buy/cart.html" title="购物车">
+					<span class="cart_num">0</span>
+					<i></i>
+					<p class="icon-text">购物车</p>
+				</a>
+			</li>
+			<li class="linekefu open_kefu">
+				<a href="javascript:void(0);" title="在线客服">
+					<i></i>
+					<p class="icon-text">客服</p>
+				</a>
+			</li>
+			<li class="weixin">
+				<a href="javascript:void(0);" title="关注微信">
+					<img src="../img/list/erweima.jpg" alt="" class="erweima_">
+					<i></i>
+					<p class="icon-text">微信</p>
+				</a>
+			</li>
+			<li class="app">
+				<a href="javascript:void(0);" title="APP下载">
+					<i></i>
+					<p style="width:17px;" class="icon-text">APP</p>
+					<div class="clearfix" id="App_code">
+						<div class="android-code app-code">
+							<img src="../img/list/Android.png">
+							<p>Android下载</p>
+						</div>
+						<div class="iphone-code app-code">
+							<img src="../img/list/ios.png">
+							<p>IOS下载</p>
+						</div>
+						<em></em>
+					</div>
+				</a>
+			</li>
+			<li class="weibo">
+				<a href="http://weibo.com/u/5394332979" target="_blank" title="关注微博">
+					<i></i>
+					<p class="icon-text">微博</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="scrollUp">
+		<a href="javascript:void(0);" title="返回顶部">
+			<i></i>
+		</a>
+	</div>
+</div>
+<!--侧栏 结束-->
+</body></html>

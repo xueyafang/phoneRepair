@@ -1,0 +1,298 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>个人信息- 咻一修</title>
+        
+		<link rel="shortcut icon" href="../img/logo.png">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=Edge">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta name="baidu-site-verification" content="2x3g9fsDlz">
+		<meta name="applicable-device" content="pc">
+		<link rel="stylesheet" type="text/css" href="../css/userinfo/same.css">
+		<link rel="stylesheet" type="text/css" href="../css/userinfo/xcConfirm.css">
+		<!-- <link rel="stylesheet" href="/Public/Home/css/header.css" /> -->
+        <!-- 自定义CSS文件 部分 -->
+		
+	<link rel="stylesheet" type="text/css" href="../css/userinfo/users-same.css">
+    <link rel="stylesheet" type="text/css" href="../css/userinfo/users-info.css">
+
+		<!-- 自定义CSS文件 结束 -->
+		
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/list_js/html5shiv.min.js"></script>
+		
+		<!-- 自定义顶部js文件 部分 -->
+		
+
+
+		<!-- 自定义顶部js文件 结束 -->
+		
+	<style type="text/css">
+:root .footer > #box[style="width:100%;height:100%;position:fixed;top:0"]
+{ display: none !important; }</style><style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style></head>
+	<body>
+		<!-- 头部部分 开始 -->
+		<div class="header">
+			<div class="header-out">
+				<div class="header_top wrap">
+					
+					<link rel="stylesheet" type="text/css" href="../css/userinfo/widget-user.css">
+<div class="tabnav">
+		
+		<ul class="tabbd">
+		<!-- <li class="by"><a href="/buy/cart.html"><i class="buycar"></i><span>(0)</span></a></li> -->
+				<li class="tabbdli user-name">
+			<a rel="nofollow" href="./userindex.jsp">${user.name}<img src="../img/headimg.jpg" onerror="javascript:this.src=&#39;/Public/User/default.jpg&#39;;">
+											</a>
+			<div class="drop-down" style="display: none; height: 158px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+				<div class="all-drop-down">
+										<p class="buy-order"><a rel="nofollow" href="./repair.jsp" class="logout_a">订单</a></p>
+
+					<p class="logout"><a rel="nofollow" href="javascript:void(0);" class="logout_a">退出登录</a></p>
+				</div>
+				<div class="triangle"></div>
+			</div>
+		</li>	</ul>
+</div>
+<!--提示框的收缩与扩展 -->
+<script type="text/javascript">
+	$(".user-name").hover(function(){ 
+		var _this = $(this);
+		_this.find(".drop-down").stop().slideDown(300);
+	},function(){
+		var _this = $(this);
+		_this.find(".drop-down").stop().slideUp(300);
+	});
+</script>
+	
+			</div>
+		</div>
+		<!-- 头部部分 结束 -->
+		
+		<!-- 主体部分 开始 -->
+		
+	<div class="con wrap clearfix">
+		
+		<!-- 菜单 开始 -->
+		<link rel="stylesheet" type="text/css" href="../css/userinfo/users-menu.css">
+
+<!--菜单 开始-->
+<div class="con-left">
+	<div class="con-l-t">
+		<a ><img src="../img/headimg.jpg" onerror="javascript:this.src=&#39;/Public/User/default.jpg&#39;;" title="点击编辑头像"></a>
+		<p class="name">${user.name }<span class="novip">VIP</span>
+		</p>
+			</div>
+	<div class="con-l-b">
+		<ul class="level2">
+			<li class="levelitem open">
+				<h3 class="clearfix"><a href="./userindex.jsp">用户中心</a><p><span></span></p></h3>
+				<ul class="level3">
+					<li><a href="javascript:void(0);">个人信息</a></li>
+					<li><a href="/phoneRepair/order?method=showOrders&uid=${user.uid }">我的订单</a></li>
+				</ul>
+			</li>
+								</ul>
+	</div>
+</div>
+<!--菜单 结束-->
+
+<script type="text/javascript">	
+
+</script>		<!-- 菜单 结束 -->
+		
+		<div class="con-right">
+			<div class="bd-t">
+				<div class="tab-container-inner">
+					  <div class="tabWrap">
+						<ul class="tabs ">
+							<li class="tab current"><a href="javascript:void(0);">个人信息</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="prolist">
+				<div class="protit"><h2>编辑你的个人资料</h2></div>
+				<div class="clearfix">
+					<div class="pro_left">
+						<div class="_left_top">
+							<form id="info" action="http://www.caobao.com/users/updateinfo.html" method="post">
+							<span class="one">
+								<strong>姓名</strong>
+								<input type="text" name="username" value="${user.name }" placeholder="您的姓名"/><br/>
+							</span>
+							<span>
+								<strong>电话号码</strong>
+								<input type="text" name="name" value="" placeholder="${user.username }">
+							</span>
+							<span class="save">
+								<a href="javascript:;">保存</a>
+							</span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- 主体部分 结束 -->
+		
+		
+		<!-- 页脚部分 开始 -->
+		<link rel="stylesheet" type="text/css" href="../css/userinfo/footer.css">
+
+<!--页脚 开始-->
+<div class="FF">
+	<div class="footer wrap">
+		<div class="row-fluids clearfix">
+			<div class="span7">
+				<h3>故障分类：</h3>
+				<ul class="clearfix">
+					<li class="nLi">
+							<h4>屏幕</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/1.html" title="屏碎 显示正常">屏碎 显示正常</a></li><li><a target="_blank" href="http://www.caobao.com/fault/2.html" title="手机屏幕失灵">手机屏幕失灵</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>电池/充电/开机</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/3.html" title="续航时间不足">续航时间不足</a></li><li><a target="_blank" href="http://www.caobao.com/fault/7.html" title="手机不能开机">手机不能开机</a></li><li><a target="_blank" href="http://www.caobao.com/fault/8.html" title="不充电不联机">不充电不联机</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>按键</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/4.html" title="按开机键不能开机">按开机键不能开机</a></li><li><a target="_blank" href="http://www.caobao.com/fault/9.html" title="手机HOME键失灵">手机HOME键失灵</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>声音/震动</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/5.html" title="手机听筒没有声音">手机听筒没有声音</a></li><li><a target="_blank" href="http://www.caobao.com/fault/6.html" title="播放音乐没有声音">播放音乐没有声音</a></li><li><a target="_blank" href="http://www.caobao.com/fault/10.html" title="无法调节音量大小">无法调节音量大小</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>拍照/录像</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/11.html" title="切换前摄像头黑屏">切换前摄像头黑屏</a></li><li><a target="_blank" href="http://www.caobao.com/fault/12.html" title="手机拍照模糊不清">手机拍照模糊不清</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>外壳/边框</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/14.html" title="后壳磨损变形">后壳磨损变形</a></li><li><a target="_blank" href="http://www.caobao.com/fault/15.html" title="手机中框变形">手机中框变形</a></li>							</ol>
+						</li><li class="nLi">
+							<h4>进水/主板</h4>
+							<ol>
+								<li><a target="_blank" href="http://www.caobao.com/fault/13.html" title="手机进水">手机进水</a></li>							</ol>
+						</li>				</ul>			</div><!-- span7 --> 
+			<div class="span30">
+				<dl class="clearfix">
+					<dt class="img fl"></dt>
+					<dd class="fl">
+						<h4>客服热线</h4>
+						<p class="tel">400-850-6838</p>
+						<p class="supp">仅收市话费用</p>
+						<p class="workTime">(周一至周日 9:00-18:00)</p>
+					</dd>
+				</dl>
+			</div>
+			<!-- <div class="span20"> -->
+				<!-- <span class="masterLogin"><a rel="nofollow" href="/system/login.html" target="_blank">维修店登录&gt</a></span> -->
+			<!-- </div> -->
+		</div><!-- row-fluids -->
+				<div class="row-fluids safeInfo">
+			<a rel="nofollow" target="_blank" href="http://61.144.227.239:9002/"><img src="./个人信息- 草包网_files/sznet110.jpg.下载" height="34" alt="深圳网络警察报警平台"></a>
+			<a rel="nofollow" target="_blank" href="http://www.cyberpolice.cn/wfjb/"><img src="./个人信息- 草包网_files/cyberpolice.jpg.下载" height="34" alt="公共信息安全网络监察"></a>
+			<a rel="nofollow" key="56777671efbfb07fa5f91f9e" logo_size="124x47" logo_type="business" href="http://www.anquan.org/authenticate/cert/?site=www.caobao.com&amp;at=business" target="_blank"><img src="./个人信息- 草包网_files/hy_124x47.png.下载" alt="安全联盟认证" height="34" style="border: none;"></a>
+			<a rel="nofollow" target="_blank" id="_pingansec_bottomimagelarge_shiming" href="http://si.trustutn.org/info?sn=868170109026620625771&amp;certType=1"><img src="./个人信息- 草包网_files/bottom_large_img.png.下载" height="34"></a>
+		</div>
+		<div class="row-fluids">
+			<p class="CR">Copyright © 2016 深圳草包网络科技有限公司 版权所有 粤ICP备15009083号-1</p>
+		</div>
+	</div>
+</div>
+<!--页脚 结束-->        <!-- 页脚部分 结束 -->  
+		
+		<!-- 侧边栏 开始 -->  
+		<link rel="stylesheet" type="text/css" href="../css/userinfo/sidebar.css">
+
+<!--侧栏 开始-->
+<div class="cb_sidebar" style="top: 57px;">
+	<span class="open"></span>
+	<div class="cb_sidebar_bg" style="display: none;"></div>
+	<div class="cb_sidebar_tabs">
+		<ul>
+			<li class="cbwlogo" style="display: none;">
+				<a href="/phoneRepair/jsp/index.jsp" title="草包网">
+					<i></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="scrollUp">
+		<a href="javascript:void(0);" title="返回顶部">
+			<i></i>
+		</a>
+	</div>
+</div>
+<!--侧栏 结束-->
+
+<script type="text/javascript">	
+	// 侧栏
+	$(".cb_sidebar .scrollUp").click(function(event) {
+		$('html,body').animate({scrollTop:0},600);
+	});
+	$(".cb_sidebar li.weixin").hover(function() {
+		$('.erweima_').stop().animate({"left":51});
+	});
+	smallScreen();
+	$(window).on("resize",function(){
+		smallScreen();
+	});
+	function smallScreen(){
+		if($(window).width() < 1350){
+			smallHide()
+			$(".cb_sidebar").hover(function() {
+				bigShow()
+			}, function() {
+				smallHide()
+			});
+		}else{
+			bigShow()
+			$(".cb_sidebar").hover(function() {
+				bigShow()
+			}, function() {
+				bigShow()
+			});
+		}
+	};
+	function smallHide(){
+		$(".cb_sidebar_tabs ul li:not(.cart)").hide();
+		$(".cb_sidebar_tabs ul li.cart").css({"border-bottom":"1px solid #eee","border-left-color":"#eee"})
+		$(".cb_sidebar_bg").hide();
+		$(".cb_sidebar").css("top","57px");
+	};
+	function bigShow(){
+		$(".cb_sidebar_tabs ul li").show();
+		$(".cb_sidebar_tabs ul li.cart").css({"border-bottom":"0 none","border-left-color":"#cdcdcd"})
+		$(".cb_sidebar_bg").show();
+		$(".cb_sidebar").css("top","0px");
+	};
+</script>		<!-- 侧边栏 结束 -->  
+		
+		<!-- 全局js文件 -->
+		<script type="text/javascript" src="./个人信息- 草包网_files/common.js.下载"></script>
+		<script type="text/javascript" src="./个人信息- 草包网_files/xcConfirm.js.下载"></script>
+		<!--[if lt IE 9]>
+		<script src="/Public/Home/page-js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" >
+			$(function(){ $('input[type="text"], textarea').placeholder(); });
+		</script>
+		<![endif]-->
+		<script>	
+			var _APP_        = "";
+			var _PUBLIC_     = "/Public";
+			var _CONTROLLER_ = "/Users";
+			var _URL_        = "http://www.caobao.com";
+			var _USERS_      = "40009";
+		</script>
+
+</body></html>

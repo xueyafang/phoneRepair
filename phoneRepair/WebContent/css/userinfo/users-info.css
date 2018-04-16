@@ -1,0 +1,79 @@
+/* 
+* @Author: Marte
+* @Date:   2016-03-19 09:11:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-19 09:46:29
+*/
+input{
+    padding:5px ;
+    font:14px "微软雅黑";
+}
+.prolist{
+  margin-top: 30px;
+}
+.prolist h2{
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.protit{
+  border-bottom:4px solid #eeeeee;
+  padding-bottom: 11px;
+}
+._left_top{
+    width: 542px;
+    float: left;
+}
+._left_top input{
+    width: 255px;
+    height: 24px;
+	line-height:24px!important;
+    border: 1px solid #c9c9c9;
+    padding: 5px;
+    font:14px "微软雅黑";
+}
+._left_top strong{
+    display: block;
+    height: 23px;
+    color: #535353;
+}
+._left_top span{
+    display: inline-block;
+    width: 257px;
+    margin-top: 23px;
+}
+._left_top span.one{
+    display: block;
+}
+._left_top span.select{
+    width: 403px;
+    display: block;
+}
+._left_top span.ml{
+    margin-left: 23px;
+}
+._left_top select {
+    margin: 0 5px 0 0;
+    height: 36px;
+    line-height: 36px;
+    width: 120px;
+    color: #535353;
+}
+._left_top select option{
+    color: #000;
+}
+._left_top span.save{
+    display: block;
+    width: 544px;
+}
+._left_top span.save a{
+    display: block;
+    width: 92px;
+    height: 36px;
+    background-color: #40bb8c;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 29px;
+}

@@ -1,0 +1,117 @@
+package com.etc.repair.web;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.etc.repair.biz.StoreBiz;
+import com.etc.repair.vo.Store;
+
+/**
+ * Servlet implementation class StoreServlet
+ */
+public class StoreServlet extends HttpServlet {
+	StoreBiz sBiz = new StoreBiz();
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public StoreServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String method = request.getParameter("method");
+		//是否存在这个商家
+		if("isExistStore".equals(method)){
+			String susername = request.getParameter("susername");
+			isExistStore(susername,request,response);
+		}else if("getCode".equals(method)){
+			getCode(request,response);
+		}else if("regist".equals(method)){
+			regist(request,response);
+		}
+		
+	}
+	
+	
+	private void regist(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		//1.获取字段sid;
+		String susername = request.getParameter("susername");
+		String spassword = request.getParameter("spassword");
+		String sname = request.getParameter("sname");
+		String saddress = request.getParameter("saddress");
+		String spic = request.getParameter("spic");
+		String stime = request.getParameter("stime");
+		String sdesc = request.getParameter("sdesc");
+//		getSpic()
+	}
+
+	/**
+	 * 获取验证码
+	 * @param response 
+	 * @param request 
+	 */
+	private void getCode(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		HttpSession session = request.getSession();
+		String code = (String) session.getAttribute("code");
+//		System.out.println(code);
+		session.invalidate();
+		try {
+//			System.out.println(code);
+			response.getWriter().print(code);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	/**
+	 * 是否存在用户
+	 * @param susername
+	 * @param request
+	 * @param response
+	 */
+	private void isExistStore(String susername, HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		boolean flag;
+		try {
+			flag = sBiz.isExistStore(susername);
+			if(flag){
+				//存在这个用户
+				response.getWriter().print(1);
+			}else{
+				//不存在这个用户
+				response.getWriter().print(0);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

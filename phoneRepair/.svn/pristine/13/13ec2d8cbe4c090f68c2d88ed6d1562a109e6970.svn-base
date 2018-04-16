@@ -1,0 +1,83 @@
+package com.etc.repair.biz;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.etc.repair.dao.StoreDao;
+import com.etc.repair.vo.Orders;
+import com.etc.repair.vo.Store;
+
+public class StoreBiz {
+	StoreDao sDao = new StoreDao();
+	public boolean isExistStore(String susername) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		boolean flag = sDao.isExistStore(susername);
+		sDao.close();
+		return flag;
+	}
+	public boolean regist(String susername, String spassword, String sname, String saddress, String spic, String stime,
+			String sdesc) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		boolean flag = sDao.regist(susername,spassword,sname,saddress,spic,stime,sdesc);
+		System.out.println(flag);
+		sDao.close();
+		return flag;
+	}
+	public Store login(String susername, String spassword) throws Exception {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		Store store  = sDao.login(susername,spassword);
+		sDao.close();
+		return store;
+	}
+	public List<Store> getStore(String searchAddress) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		List<Store> list = sDao.getStore(searchAddress);
+		sDao.close();
+		return list;
+	}
+	public List<Store> show() throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		List<Store> list = sDao.show();
+		sDao.close();
+		return list;
+	}
+	public List<Store> searchShow(String address, String search, int currPage, int pageSize) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		sDao.getconn();
+		List<Store> list = sDao.searchShow(address,search,currPage,pageSize);
+		sDao.close();
+		return list;
+	}
+	public int searchTotalCount(String address, String search) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		sDao.getconn();
+		int totalCount = sDao.searchTotalCount(address,search);
+		sDao.close();
+		return totalCount;
+	}
+
+	public List slistShow(String number, String time, int sid) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		sDao.getconn();
+		List<Orders> list = sDao.slistShow(number,time,sid);
+		sDao.close();
+		return list;
+		
+	}
+
+	public Store searchBySid(int sid) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		sDao.getconn();
+		Store store =  sDao.searchBySid(sid);
+		sDao.close();
+		return store;
+		
+	}
+
+
+
+}

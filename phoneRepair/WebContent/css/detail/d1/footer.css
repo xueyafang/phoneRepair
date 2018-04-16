@@ -1,0 +1,158 @@
+/*footer*/
+.FF{
+	width:100%;
+	background:#fff;
+	margin-top:15px;
+}
+.footer {
+    padding-bottom: 20px;
+    background: #fff;
+}
+.footer .row-fluids {
+    background-color: #fff;
+}
+.footer .row-fluids .span7{
+    float: left;
+    margin-left: 0;
+    width: 70%;
+}
+.footer .row-fluids .span7 h3 {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: normal;
+    margin: 0;
+    padding: 18px 0 4px 16px;
+    color: #000;
+}
+.footer .row-fluids .span7 ul {
+    margin: 0;
+    padding: 0 15px 0 23px;
+    list-style: none;
+}
+.footer .row-fluids .span7 ul li.nLi {
+    float: left;
+    margin-right: 31px;
+    line-height: 20px;
+}
+.footer .row-fluids .span7 ul li.nLi h4 {
+    font-size: 14px;
+    line-height: 2;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    color: #505050;
+}
+.footer .row-fluids .span7 ul li.nLi ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	margin-left:-6px;
+}
+.footer .row-fluids .span7 ul li.nLi ol li {
+    line-height: 2.4;
+    text-indent: 5px;
+    font-size: 12px;
+}
+.footer .row-fluids .span7 ul li.nLi ol li a {
+    color: #898989;
+    text-decoration: none;
+}
+.row-fluids .span30 {
+    width: 18%;
+    float: left;
+    margin-top: 78px;
+    margin-left: 0;
+}
+.footer .row-fluids .span30 dd h3{
+    color: #4f4f4f;
+    font-size: 14px;
+}
+.footer .row-fluids .span30 dd .tel{
+    color: #4f4f4f;
+    font-size: 26px;
+	font-weight:bold;
+    height: 35px;
+    line-height: 35px;
+}
+.footer .row-fluids .span30 dd .supp,
+.footer .row-fluids .span30 dd p.workTime{
+    color: #898989;
+    font-size: 13px;
+}
+.row-fluids .span20 {
+    width: 16%;
+    float: left;
+    margin: 76px 0 10px 0;
+}
+.row-fluids .span20 .masterLogin{
+	width: 100px;
+    height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 14px;
+}
+.row-fluids .span20 .masterLogin a{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #ff9600;
+    border: 1px solid #ff9600;
+    border-radius: 18px;
+}
+.row-fluids .span20 p{
+    margin-bottom: 5px;
+    height: 29px;
+}
+.row-fluids .span20 p i{
+	width:21px;
+	height:24px;
+	background:url(../images/2016/icon.png) -358px -334px no-repeat;
+	display:inline-block;
+	vertical-align:-6px;
+	margin-right:5px;
+}
+.footer #App_code{
+	color:#535353;
+	font-size:16px;
+	text-align:center;
+}
+.footer #App_code .app-code{
+	float:left;
+}
+.footer #App_code .android-code{
+	padding-right:10px;
+}
+.footer #App_code .app-code p{
+	height:auto;
+}
+.footer #App_code .app-code img{
+	width:84px;
+}
+.footer .safeInfo {
+    padding: 10px 0;
+    text-align: center;
+	width:100;
+	margin:15px 0 0 0;
+	*margin:78px 0 0 0;
+}
+.footer .safeInfo a{
+   margin: 0 10px;
+}
+.footer .CR {
+    text-align: center;
+    font-size: 12px;
+    color: #4f4f4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+

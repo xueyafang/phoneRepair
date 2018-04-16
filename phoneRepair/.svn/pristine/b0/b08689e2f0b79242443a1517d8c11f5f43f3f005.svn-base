@@ -1,0 +1,63 @@
+package com.etc.repair.vo;
+
+import java.sql.Date;
+
+public class Orders {
+	private Integer oid;
+	private Integer uid;
+	private Integer sid;
+	private Double price;
+	private Integer sstate;
+	private Integer ustate;
+	private Date date;
+	private String fault;
+	public Integer getOid() {
+		return oid;
+	}
+	public void setOid(Integer oid) {
+		this.oid = oid;
+	}
+	public Integer getUid() {
+		return uid;
+	}
+	public void setUid(Integer uid) {
+		this.uid = uid;
+	}
+	public Integer getSid() {
+		return sid;
+	}
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	public Integer getSstate() {
+		return sstate;
+	}
+	public void setSstate(Integer sstate) {
+		this.sstate = sstate;
+	}
+	public Integer getUstate() {
+		return ustate;
+	}
+	public void setUstate(Integer ustate) {
+		this.ustate = ustate;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	public String getFault() {
+		return fault;
+	}
+	public void setFault(String fault) {
+		this.fault = fault;
+	}
+	
+}

@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import com.etc.repair.vo.Store;
+
+
+public class Test1 {
+	public static void main(String[] args) {
+		String id = UUID.randomUUID().toString().replaceAll("-", "");
+		System.out.println(id);
+	}
+}

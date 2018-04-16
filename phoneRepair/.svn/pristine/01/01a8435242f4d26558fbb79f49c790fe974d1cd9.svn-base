@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<link rel="stylesheet" type="text/css"
+				href="/phoneRepair/css/list/widget-user.css">
+<div class="header" style="margin-top: 10px;">
+	<div class="header-out">
+		<div class="header_top wrap" style="height: 60px">
+			<!--logo展示-->
+			<img src="/phoneRepair/img/logo.png" width="50px" height="50px"
+				style="margin-top: 0px;" /> &nbsp;<font size="5">咻一修</font>
+			<div class="tabnav">
+				<ul class="tabbd">
+				<c:if test="${empty store }">
+					<!-- <li class="by"><a href="/buy/cart.html"><i class="buycar"></i><span>(0)</span></a></li> -->
+					<li class="login tabbdli" style="margin-top: 15px"><a
+						rel="nofollow" href="/phoneRepair/jsp/slogin.jsp">登录</a></li>
+					<li class="line tabbdli" style="margin-top: 15px">|</li>
+					<!--<li><a rel="nofollow" href="/users/regist.html">注册</a></li>-->
+					<li class="tabbdli" style="margin-top: 15px"><a rel="nofollow"
+						href="/phoneRepair/jsp/sregist.jsp">注册</a></li>
+				</c:if>
+				<c:if test="${!empty store }">
+					<!-- <li class="by"><a href="/buy/cart.html"><i class="buycar"></i><span>(0)</span></a></li> -->
+					<li class="login tabbdli" style="margin-top: 15px"><a
+						rel="nofollow" href="/phoneRepair/jsp/slogin.jsp">${store.susername }</a></li>
+					<li class="line tabbdli" style="margin-top: 15px">|</li>
+					<!--<li><a rel="nofollow" href="/users/regist.html">注册</a></li>-->
+					<li class="tabbdli" style="margin-top: 15px"><a rel="nofollow"
+						href="/phoneRepair/store?method=outLogin">退出</a></li>
+				</c:if>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

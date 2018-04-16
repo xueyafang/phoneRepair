@@ -1,0 +1,110 @@
+package com.etc.repair.util;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+
+public class JDBCUtil2 {
+	
+	public static Connection con ;
+	public Statement state;
+	public ResultSet rs;
+	public PreparedStatement pstmt;
+	public CallableStatement call;
+	private static String classname ;
+	private static String url ;
+	private static String user ;
+	private static String password ;
+	
+	//读取配置文件，整个文件中读取一次
+	static{
+		Properties prop =  new Properties();
+		try {
+			prop.load(new FileInputStream("https://xyf-PC/svn/1.0/phoneRepair/src/jdbc.properties"));
+			classname = prop.getProperty("classname");
+			url = prop.getProperty("url");
+			user = prop.getProperty("user");
+			password = prop.getProperty("password");
+		} catch (IOException e) {
+			System.out.println("配置文件找不到不到");
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 获取连接
+	 * @throws ClassNotFoundException 
+	 * @throws SQLException 
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
+	 */
+	public  void getconn() throws ClassNotFoundException, SQLException, FileNotFoundException, IOException{
+		//1.加载驱动
+		Class.forName(classname);
+		//2.连接数据库,获取连接对象
+		con = DriverManager.getConnection(url, user, password);
+	}
+	
+	
+	/**
+	 * 事务
+	 * @throws SQLException 
+	 * @throws ClassNotFoundException 
+	 */
+	public void transac() throws SQLException, ClassNotFoundException{
+		if(con==null){
+			//1.加载驱动
+			Class.forName(classname);
+			//2.连接数据库,获取连接对象
+			con = DriverManager.getConnection(url, user, password);
+		}
+		con.setAutoCommit(false);//手动提交
+	}
+
+	/**
+	 * 回滚
+	 * @throws SQLException 
+	 */
+	public void rollback() throws SQLException{
+		con.rollback();
+	}
+	
+	/**
+	 * 提交
+	 * @throws SQLException 
+	 */
+	public void commit() throws SQLException{
+		con.commit();
+	}
+	/**
+	 * 关闭数据库
+	 * @throws SQLException 
+	 */
+	public void close() throws SQLException{
+		if(rs!=null){
+			rs.close();
+		}
+		if(state!=null){
+			state.close();
+		}
+		if(pstmt!=null){
+			pstmt.close();
+		}
+		if(call!=null){
+			call.close();
+		}
+		if(con!=null){
+			con.close();
+			con = null;
+		}
+	}
+
+}

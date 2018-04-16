@@ -1,0 +1,286 @@
+/* 
+* @Author: Marte
+* @Date:   2016-03-19 09:11:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-19 09:46:29
+*/
+.bd-t{
+	margin-bottom:20px;
+}
+.tab-container-inner {
+    height: 46px;
+    border-bottom: 1px solid #cccccc;
+}
+.tabWrap ul li:first-child {
+    margin-left: 6px;
+}
+.tabWrap ul li.current {
+    border-color: #535353;
+    border-bottom-color: #fff;
+}
+.tabWrap ul li {
+    float: left;
+    height: 41px;
+    line-height: 41px;
+    border: 1px solid #b5b5b5;
+    margin: 4px 15px 0 0;
+    border-bottom-color: #fff;
+}
+.tabWrap ul li.current a {
+    color: #535353;
+}
+.tabWrap ul li a {
+    color: #898989;
+    padding: 0 16px;
+    display: block;
+    height: 100%;
+}
+
+.bd-b .ul_tit{
+    margin-top: 10px;
+    height: 48px;
+    background-color: #eee;
+    border: 1px solid #dcdcdc;
+}
+.bd-b .ul_tit li{
+    float: left;
+    text-align: center;
+    line-height: 48px;
+	color:#000;
+}
+/* 订单列表 */
+.bd-b .ul_bd .null{
+	border:0 none;
+	text-align:center;
+	color:#535353;
+	margin:20px 0;
+}
+.bd-b .ul_bd{
+  margin-top: 10px;
+}
+.bd-b .ul_bd li{
+  border: 1px solid #dcdcdc;
+  margin-bottom: 13px;
+}
+.bd-b .ul_bd li.null{
+	border:0 none;
+	text-align:center;
+}
+.bd-b .ul_bd .list_tit,
+.bd-b .ul_bd .list_btn{
+   height: 42px;
+   padding: 0 16px;
+   color: #535353;
+   background-color: #e8f3ef;
+   line-height: 42px;
+}
+.bd-b .ul_bd .list_tit img{
+	vertical-align:-6px;
+}
+.bd-b .ul_bd .list_tit time{
+   margin-right: 10px;
+   font-weight:bold;
+}
+.bd-b .ul_bd .list_tit .order-num{
+   margin:0 72px 0 20px;
+}
+.bd-b .ul_bd .list_tit .order-statu a{
+	color:#ff9600;
+	cursor:text;
+}
+/* 定义三个宽度 */
+.bigW{
+	width:460px;
+}
+.bigM{
+	width:200px;
+}
+.bigS{
+	width:130px;
+}
+/* 订单详情 */
+.list-detial .list-item{
+	float:left;
+}
+.list-detial .btn-group{
+	float:left;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+/* 订单结算 */
+.list-detial .btn-group a{
+	border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin: 5px 5px;
+    text-align: center;
+    width: 100px;
+	background-color:#40bb8c;
+}
+.list-detial .btn-group .eva,
+.list-detial .btn-group .pay{
+	background-color:#ff9600;
+}
+.list-detial .btn-group .sign,
+.list-detial .btn-group .order-detial{
+	border:1px solid #c9c9c9;
+    background-color: #fff;
+	color:#535353;
+}
+.list-detial .btn-group .slt-shop{
+	background-color:#40bb8c;
+}
+.list-detial .btn-group .signin{
+    color: #535353;
+	margin-top: 22px;
+	display:inline-block;
+}
+.list-detial .phpic{
+  float:left;
+  padding-left:12px;
+}
+.list-detial .phpic .iphone{
+  float:left;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+}
+.list-detial .list_bd{
+  padding: 10px 0;
+  line-height:52px;
+}
+.list-detial .list_bd .phpic_id{
+  float:left;
+  vertical-align: middle;
+  margin-left: 8px;
+  width:400px;
+  line-height: 22px;
+}
+.list-detial .list_bd .phpic_id .introduce{
+	display:block;
+}
+.list-detial .list_bd .phpic_id .color{
+	display:block;
+	color:#b5b5b5;
+}
+.ul_bd span.two{
+  float:left;
+  text-align: center;
+}
+.ul_bd span.two{
+  color: #535353;
+}
+.ul_bd span.two strong{
+  display: block;
+  font-size: 12px;
+  color: #898989;
+}
+.pageLink ul li.active a{
+	line-height:2.4;
+}
+.ul_bd .list_tit .delete {
+    width: 14px;
+    cursor: pointer;
+    height: 100%;
+    background: url(../images/2016/icon.png) -457px 14px no-repeat;
+    display: inline-block;
+    float: right;
+}
+/* 请填写物流 */
+.posF{
+    display:none;
+}
+.posF .hd{
+    border-bottom:2px solid #dfdfdf;
+}
+.posF .hd p{
+    line-height:50px;
+    font-size: 20px;
+    color: #535353;
+    text-indent:2em;
+    margin:0;
+}
+.posF .bd{
+    padding:30px;
+}
+.posF .rope{
+    padding:0;
+    margin:0 25px 10px 25px;
+    text-align:center;
+}
+.posF .rope input{
+    width:296px;
+    height: 26px;
+    border-color: #e5e5e5;
+    margin:0;
+}
+.posF .rope select {
+    width:310px;
+    height: 36px;
+    margin:0;
+    border-color: #e5e5e5;
+}
+.posF .rope button{
+    display:inline-block;
+    padding:0 15px;
+    line-height:36px;
+    font-size:14px;
+    width: 105px;    
+    font-family: "microsoft yahei";
+    height: 36px;
+    cursor: pointer;
+    border:0;
+    border-radius:4px;
+	margin-left: 23px;
+}
+.posF .rope button.off{
+    background-color: #b5b5b5;
+    color:#fff;
+    margin-left:0;
+}
+.posF .rope label{
+    margin:0;
+    text-align:left;
+    color:#898989;
+    font-size: 16px;
+}
+.posF .rope label input{
+    vertical-align:-1px;
+    height: auto;
+    width:auto;
+    display:inline-block;
+}
+.posF .rope .submit{
+    background:#3fb88c;
+    color:#fff;
+}
+.posF .rope  span{
+    display: inline-block;
+    width: 70px;
+    color:#535353;
+}
+.box400 .hd .off {
+    width: 35px;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16.5px;
+    right: 15px;
+    background: url(../images/2016/icon.png) -79px -132px no-repeat;
+    cursor: pointer;
+}
+.box400{
+    border-radius: 6px;
+	width:500px;
+	border:1px solid #eee;
+}
+
+
+
+
+
+

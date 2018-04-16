@@ -1,0 +1,77 @@
+package com.etc.repair.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.User;
+
+public class UserDao extends BaseDao{
+	/**
+	 * 登录
+	 * 
+	 * @param username
+	 * @param password
+	 * @return
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 * @throws InvocationTargetException
+	 * @throws IllegalArgumentException
+	 * @throws ClassNotFoundException
+	 */
+	public User login(String username, String password) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		//查询是否有这个用户
+		List<User> list = query
+				("select * from user where username=? and password=?", new Object[]{username,password}, User.class);
+		//如果有这个用户，返回该用户，如果没有则返回空
+		if(list.size()>0){
+			return list.get(0);
+		}else{
+			return null;
+		}
+	}
+
+	
+	/**
+	 * 判断账号是否存在
+	 * @param username
+	 * @return
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 * @throws ClassNotFoundException 
+	 */
+	public boolean select(String username) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		List<User> list = query("select * from user where username=?",
+				new Object[] { username }, User.class);
+		// 如果list中有数据，表示存在这个账号
+		if (list.size() > 0) {
+			return false;// 不能注册
+		} else {
+			// 否则不存在
+			return true;// 可以注册
+		}
+	
+	}
+
+
+	//注册
+	public boolean regist(User u) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		//添加
+		int count = Update("insert into user(uid,username,password,score) values(?,?,?,?)",
+				u.getUid(), u.getUsername(), u.getPassword(), u.getScore()
+				);
+		//三目运算符    添加成功返回true
+		return count==1?true:false;
+		
+	}
+}

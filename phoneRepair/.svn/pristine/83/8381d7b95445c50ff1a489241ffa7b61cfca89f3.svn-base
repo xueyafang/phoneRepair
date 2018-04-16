@@ -1,0 +1,20 @@
+package com.etc.repair.biz;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+
+import com.etc.repair.dao.StoreDao;
+
+public class StoreBiz {
+	StoreDao sDao = new StoreDao();
+	public boolean isExistStore(String susername) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		// TODO Auto-generated method stub
+		sDao.getconn();
+		boolean flag = sDao.isExistStore(susername);
+		sDao.close();
+		return flag;
+	}
+
+}

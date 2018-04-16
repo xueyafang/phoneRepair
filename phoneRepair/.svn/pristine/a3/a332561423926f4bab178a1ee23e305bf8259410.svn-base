@@ -1,0 +1,47 @@
+package com.etc.repair.biz;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.etc.repair.dao.AdminDao;
+import com.etc.repair.vo.Admin;
+
+import com.etc.repair.vo.User;
+
+import com.etc.repair.vo.Store;
+
+
+public class AdminBiz {
+	private  AdminDao admindao = new AdminDao();
+	/**
+	 * 登录
+	 * @param username
+	 * @param password
+	 * @return
+	 * @throws ClassNotFoundException
+	 * @throws FileNotFoundException
+	 * @throws SQLException
+	 * @throws IOException
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 */
+	public   Admin login(String username, String password) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		//连接数据库
+		admindao.getconn();
+		Admin admin = admindao.login(username,password);
+		//关闭数据库
+		admindao.close();
+		return admin;			
+	}
+	
+
+
+}

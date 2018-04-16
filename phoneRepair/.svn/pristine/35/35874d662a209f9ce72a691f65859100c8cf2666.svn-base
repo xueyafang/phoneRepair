@@ -1,0 +1,206 @@
+package com.etc.repair.web;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.etc.repair.biz.UserBiz;
+import com.etc.repair.vo.User;
+
+/**
+ * Servlet implementation class UserServlet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ */
+public class UserServlet extends HttpServlet {
+	
+	private UserBiz userBiz = new UserBiz();
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UserServlet() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String method = request.getParameter("method");
+		if("login".equals(method)){
+			try {
+				login(request,response);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				e.printStackTrace();
+			} catch (InvocationTargetException e) {
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
+			} catch (InstantiationException e) {
+				e.printStackTrace();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}else if("getCode".equals(method)){
+			getCode(request,response);
+		}
+		if("regist".equals(method)){
+			try {
+				try {
+					regist(request,response);
+				} catch (IllegalArgumentException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InvocationTargetException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InstantiationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+	/**
+<<<<<<< .mine
+	 * 获得验证码
+	 * @param request
+	 * @param response
+	 */
+	private void getCode(HttpServletRequest request,
+			HttpServletResponse response) {
+		System.out.println("请求过来了");
+				String code = request.getParameter("msg");
+				System.out.println(code);
+				//获取生成的验证码
+				HttpSession session = request.getSession();//创建session
+				String code1 = (String)session.getAttribute("code");
+				System.out.println("---"+code1);
+				
+				int result = 0;
+				//判断验证码
+				if(code != null && code1.equalsIgnoreCase(code)){
+					result = 1;
+				}else{
+					result = 0;
+				}
+				//将数据传到前台
+				try {
+					response.getWriter().print(result);
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+	}
+
+	/**
+=======
+	 * 注册
+	 * @param request
+	 * @param response
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws ClassNotFoundException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 */
+	private void regist(HttpServletRequest request, HttpServletResponse response) throws IOException, ClassNotFoundException, SQLException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException {
+		
+		//设置编码格式
+				request.setCharacterEncoding("utf-8");
+				//获取所有属性
+				
+				String username = request.getParameter("username");
+				String password = request.getParameter("pwd");
+				String name = request.getParameter("name");
+				//装入对象
+				User u = new User();
+				u.setUsername(username);
+				u.setPassword(password);
+				u.setName(name);
+				// 传入biz
+						Boolean flag = userBiz.regist(u);
+						// 如果成功
+						if (flag) {
+							
+							response.sendRedirect(request.getContextPath() + "/jsp/login.jsp");
+						} else {
+							// 失败情况
+							response.getWriter().print("注册失败,请重新注册");
+							// 案例2-定时跳转
+							response.setHeader("refresh", "2;url=" + request.getContextPath()+ "/jsp/regist.jsp");
+						}
+		
+	}
+
+	/**
+>>>>>>> .r36
+	 * 登录
+	 * @param request
+	 * @param response
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 * @throws ClassNotFoundException 
+	 */
+	private void login(HttpServletRequest request, HttpServletResponse response) throws IOException, ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException {
+		//获取页面用户的账号和密码
+		String username = request.getParameter("userAccount");
+		String password = request.getParameter("password");
+		String remb = request.getParameter("remember_name");
+			User user = userBiz.login(username,password);
+			if(user==null){
+				response.getWriter().write("账号或密码错误，请重新输入！");
+				response.setHeader("Refresh", "2;url="+request.getContextPath()+"/jsp/login.jsp");
+			}else{
+				//记住用户名、密码
+				if("ok".equals(remb)){
+					Cookie c1 = new Cookie("username",user.getUsername());
+					c1.setPath("/phoneRepair");
+					c1.setMaxAge(60*60*24*3);
+					Cookie c2 = new Cookie("password",user.getPassword());
+					c2.setPath("/phoneRepair");
+					c2.setMaxAge(60*60*24*3);
+					
+					response.addCookie(c1);
+					response.addCookie(c2);
+				}
+				response.getWriter().write("登录成功！");
+				response.setHeader("Refresh", "3;url="+request.getContextPath()+"/jsp/index.jsp");
+			}
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

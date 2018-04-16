@@ -1,0 +1,38 @@
+package com.etc.repair.dao;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.Orders;
+
+public class OrderDao extends BaseDao{
+
+	public int insertOrder(String oid, int sid, int uid, Date date) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		int num = Update("insert into orders(oid,sid,uid,date) values(?,?,?,?)", oid,sid,uid,date);
+		return num;
+	}
+
+	public List<Object> showOrder(String oid) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		pstmt = con.prepareStatement("select u.name,u.score,s.sname,o.* from user u,store s,orders o where u.uid=o.uid and s.sid=o.sid and o.oid=?");
+		pstmt.setString(1, oid);
+		rs = pstmt.executeQuery();
+		List<Object> list = new ArrayList<Object>();
+		while(rs.next()){
+			list.add(rs.getString("u.name"));
+			list.add(rs.getInt("u.score"));
+			list.add(rs.getString("s.sname"));
+			list.add(rs.getString("o.oid"));
+			list.add(rs.getDouble("o.price"));
+			list.add(rs.getString("o.fault"));
+			list.add(rs.getDate("o.date"));
+		}
+		return list;
+	}
+
+}

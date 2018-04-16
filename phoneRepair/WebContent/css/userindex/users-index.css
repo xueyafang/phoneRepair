@@ -1,0 +1,157 @@
+/* 
+* @Author: Marte
+* @Date:   2016-03-19 09:11:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-19 09:46:29
+*/
+/*列表1*/
+.cbd-detail{
+  margin-top: 30px;
+}
+.cbd-detail h2{
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.ul_bd span.two,
+.ul_bd span.three,
+.ul_bd span.four,
+.ul_bd span.five{
+  float:left;
+  text-align: center;
+}
+.cbd-detail .ul_bd li span.shopping{
+	color:#40bb8c;
+}
+.cbd-detail .ul_bd li span.repair{
+	color:#f40;
+}
+.cbd-detail .ul_bd li span.recovery{
+	color:#2a6cf3;
+}
+.cbd-detail .ul_bd li span.offer{
+	color:#ff7800;
+}
+.cbd-detail .ul_bd li span.comment{
+	color:#d64cfe;
+}
+.cbd-detail .ul_bd li span.return{
+	color:#ff4444;
+}
+.cbd-detail .ul_bd li span.bbs{
+	color:#ff7800;
+}
+
+/*页码*/
+.pagenum{
+    height: 40px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 14px;
+    position: relative;
+}
+.pagenum .pre_page{
+    float: left;
+    margin-left: 20px;
+    cursor:pointer;
+    color: #535353;
+}
+.pagenum .num{
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+    left: 50%;
+    margin-left:-20px;
+    color: #535353;
+}
+.pagenum .next_page{
+    float: right;
+    margin-right: 20px;
+    cursor:pointer;
+    color: #535353;
+}
+/*list2*/
+.cbd-detail .protit h2{
+    float: left;
+}
+.cbd-detail .protit a{
+  color: #ff7800;
+  float: right;
+  margin-top: 12px;
+}
+.cbd-detail .ul_tit{
+  height: 38px;
+  margin-top: 17px;
+  line-height: 38px;
+  color: #313131;
+  border-bottom: 1px solid #dcdcdc;
+}
+.cbd-detail .ul_tit li{
+  float: left;
+  color: #313131;
+}
+.cbd-detail .ul_bd li{
+  height: 45px;
+  border-bottom: 1px dashed #dcdcdc;
+  line-height: 45px;
+}
+.cbd-detail .ul_bd li span{
+  display: inline-block;
+}
+.cbd-detail .ul_tit li.first,.ul_bd li span.first{
+  float:left;
+  width: 60px;
+  padding-left: 12px;
+}
+.cbd-detail .ul_tit li.two,.ul_bd li span.two{
+  width: 105px;
+  text-align: center;
+}
+.cbd-detail .ul_bd li span{
+  color: #898989;
+}
+.cbd-detail .ul_bd li span.two{
+  color: #40bb8c;
+}
+.cbd-detail .ul_bd li span.two .in{
+  color: #2faa64;
+}
+.cbd-detail .ul_bd li span.two .out{
+  color: #ff9600;
+}
+.cbd-detail .ul_tit li.three,.ul_bd li span.three{
+  width: 105px;
+  text-align: center;
+}
+.cbd-detail .ul_tit li.four,.ul_bd li span.four{
+  width: 186px;
+  text-align: center;
+}
+.cbd-detail .ul_tit li.five,.ul_bd li span.five{
+  width: 396px;
+  text-align: center;
+}
+.cbd-detail .ul_bd li span.five{
+  width: 389px;
+}
+
+.con .bd-t{
+	margin-top:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

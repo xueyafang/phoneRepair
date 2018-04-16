@@ -1,0 +1,56 @@
+package com.etc.repair.biz;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
+
+import com.etc.repair.dao.OrderDao;
+import com.etc.repair.vo.Orders;
+
+public class OrderBiz {
+	OrderDao oDao = new OrderDao();
+	
+	/**
+	 * 生成订单
+	 * @param oid
+	 * @param sid
+	 * @param uid
+	 * @param date
+	 * @return
+	 * @throws ClassNotFoundException
+	 * @throws FileNotFoundException
+	 * @throws SQLException
+	 * @throws IOException
+	 */
+	public int insertOrder(String oid, int sid, int uid, Date date) throws ClassNotFoundException, FileNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		oDao.getconn();
+		int num = oDao.insertOrder(oid,sid,uid,date);
+		oDao.close();
+		return num;
+	}
+	
+	/**
+	 * 显示当前生成的订单
+	 * @param oid
+	 * @return
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws InstantiationException 
+	 * @throws IllegalAccessException 
+	 * @throws InvocationTargetException 
+	 * @throws IllegalArgumentException 
+	 * @throws ClassNotFoundException 
+	 */
+	public List showOrder(String oid) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		oDao.getconn();
+		List<Object> list = oDao.showOrder(oid);
+		oDao.close();
+		return list;
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.sql.SQLException;
+
+import com.etc.repair.util.BaseDao;
+
+public class Test extends BaseDao {
+	public static void main(String[] args) throws Exception {
+		Test test1 = new Test();
+		test1.getconn();
+		test1.pstmt = test1.con.prepareStatement("select * from user");
+		test1.rs = test1.pstmt.executeQuery();
+		if(test1.rs.next()){
+		
+			System.out.println("111");
+		}else{
+			System.out.println("222");
+		}
+		
+		test1.close();
+	}
+}

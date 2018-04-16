@@ -1,0 +1,156 @@
+package com.etc.repair.web;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.etc.repair.biz.StoreBiz;
+import com.etc.repair.vo.Store;
+
+/**
+ * Servlet implementation class StoreServlet
+ */
+public class StoreServlet extends HttpServlet {
+	StoreBiz sBiz = new StoreBiz();
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public StoreServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String method = request.getParameter("method");
+		//是否存在这个商家
+		if("isExistStore".equals(method)){
+			String susername = request.getParameter("susername");
+			isExistStore(susername,request,response);
+		}else if("getCode".equals(method)){
+			getCode(request,response);
+		}else if("regist".equals(method)){
+			regist(request,response);
+		}
+		
+	}
+	
+	
+	private void regist(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		//1.获取字段sid;
+		getForm(request,response);
+//		System.out.println(susername+" "+spassword+" ");
+		String susername = (String) request.getAttribute("susername");
+		String spassword = (String) request.getAttribute("spassword");
+		String sname = (String) request.getAttribute("sname");
+		String saddress = (String) request.getAttribute("saddress");
+		String spic = (String) request.getAttribute("spic");
+		String stime = (String) request.getAttribute("stime");
+		String sdesc = (String) request.getAttribute("sdesc");
+		boolean flag = false;
+		try {
+			flag = sBiz.regist(susername,spassword,sname,saddress,spic,stime,sdesc);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try{
+			if(flag){
+			//注册成功
+				System.out.println("注册成功");
+				response.getWriter().write("注册成功");
+			}else{
+				System.out.println("注册失败");
+				response.getWriter().write("注册失败");
+			}
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 获取表单字段
+	 * @param request
+	 * @param response
+	 */
+	private void getForm(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		try {
+			request.getRequestDispatcher("/upload").forward(request, response);
+		} catch (ServletException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 获取验证码
+	 * @param response 
+	 * @param request 
+	 */
+	private void getCode(HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		HttpSession session = request.getSession();
+		String code = (String) session.getAttribute("code");
+//		System.out.println(code);
+		try {
+//			System.out.println(code);
+			response.getWriter().print(code);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	/**
+	 * 是否存在用户
+	 * @param susername
+	 * @param request
+	 * @param response
+	 */
+	private void isExistStore(String susername, HttpServletRequest request, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		boolean flag;
+		try {
+			flag = sBiz.isExistStore(susername);
+			if(flag){
+				//存在这个用户
+				response.getWriter().print(1);
+			}else{
+				//不存在这个用户
+				response.getWriter().print(0);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

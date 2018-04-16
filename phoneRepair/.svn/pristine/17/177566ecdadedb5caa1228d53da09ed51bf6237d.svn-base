@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery实现联动</title>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<select id="province">
+			<option>请选择省份</option>
+		</select>
+		<select id="city">
+			<option>请选择城市</option>
+		</select>
+	
+	</body>
+	<script type="text/javascript">
+		//当Dom加载完成后,执行其中的函数
+		$(function(){
+			//1.加载省份
+			var provinceArr = new Array();
+			$.ajax({
+				url:"/phoneRepair/city",
+				data: "method=getProvince",
+				error:function(){
+				},
+				success:function(data){
+					provinceArr = data.split(",");
+					for(var i=0;i<provinceArr.length;i++){
+						//alert(provinceArr[i]);
+						var $option = $("<option>"+provinceArr[i]+"</option>");
+						$("#province").append($option);
+					}
+				}
+					
+			}); 
+			var cityArr = new Array();
+			//2.加载城市
+			$("#province").change(function(){
+				$("#city")[0].length = 1;
+				var index = this.selectedIndex;
+				$.ajax({
+					url:"/phoneRepair/city",
+					data: "method=getCity&provinceId="+index,
+					error:function(){
+					},
+					success:function(data){
+						cityArr = data.split(",");
+						for(var j=0;j<cityArr.length;j++){
+							var $option = $("<option>"+cityArr[j]+"</option>");
+							$("#city").append($option);
+						}
+					}
+					
+				});
+				
+			});
+		});
+	</script> 
+</html>

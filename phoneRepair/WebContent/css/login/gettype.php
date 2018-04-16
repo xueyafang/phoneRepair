@@ -1,0 +1,1 @@
+geetest_1506302249181({"status": "success", "data": {"aspect_radio": {"click": 128, "slide": 103}, "geetest": "/static/js/geetest.6.0.0.js", "slide": "/static/js/slide.7.0.2.js", "type": "fullpage", "fullpage": "/static/js/fullpage.8.0.5.js", "click": "/static/js/click.2.0.2.js", "static_servers": ["static.geetest.com/", "dn-staticdown.qbox.me/"]}})

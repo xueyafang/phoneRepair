@@ -1,0 +1,23 @@
+package com.etc.repair.dao;
+
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.etc.repair.util.BaseDao;
+import com.etc.repair.vo.Store;
+
+public class StoreDao extends BaseDao{
+
+	public boolean isExistStore(String susername) throws ClassNotFoundException, IllegalArgumentException, InvocationTargetException, IllegalAccessException, InstantiationException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		List<Store> list = query("select * from store where susername=?", new Object[]{susername}, Store.class);
+		if(list.size()==0){
+			//不存在
+			return false;
+		}
+		return true;
+	}
+
+}

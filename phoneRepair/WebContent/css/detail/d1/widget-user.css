@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+	.tabnav{
+    float: right;
+}
+.tabnav ul.tabbd{
+    float: left;
+}
+.tabnav ul.tabbd .tabbdli{
+    float: left;
+	line-height: 30px;
+}
+.tabnav ul.tabbd .tabbdli.user-name img{
+    vertical-align: middle;
+    margin: 0 1px 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.tabnav ul.tabbd .tabbdli.user-name{
+    position: relative;
+}
+.tabnav ul.tabbd .tabbdli.user-name .icons-circle{
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ff4444;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+	margin-left: -63px;
+	width: 87px;
+	border: 1px solid #eeeeee;
+	background-color: #fff;
+	z-index:999;
+	text-align: center;
+	padding:0 20px;
+	display: none;
+	box-sizing: content-box;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down p{
+    height: 52px;
+	line-height: 52px;
+	float:none!important;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down p a{
+    display: block;
+	color:#898989;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down p{
+    border-bottom: 1px solid #eeeeee;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down .logout{
+    border-bottom: 0 none;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down .my-shop .icons-circle{
+    top: 16px;
+    right: 32px;
+}
+.tabnav ul.tabbd .tabbdli.user-name .drop-down .triangle{
+	position: absolute;
+	top: -5px;
+	left:50%;
+	margin-left: -5px;
+	width: 10px;
+	height: 6px;
+	background: url(../images/2016/icon.png) -435px -465px no-repeat;
+}
+.tabnav ul.tabbd .tabbdli a{
+    color: #535353;
+}
+.tabnav ul.share .tabbdli{
+    width: 28px;
+    cursor: pointer;
+    height: 29px;
+    background:  url(../images/2016/icon.png) 0 -287px no-repeat;
+    margin:16px 0 0 10px;
+}
+.tabnav ul.tabbd .tabbdli.quote-notice{
+   margin-right: 25px;
+}
+.tabnav ul.tabbd .tabbdli.logout{
+   margin-left: 15px;
+}
+.tabnav ul.tabbd .tabbdli.logout a{
+   color: #b5b5b5;
+   display:inline-block;
+}
+.tabnav ul.tabbd .tabbdli span{
+  color: #f00;
+  font-size: 12px;
+}
+.tabnav ul.tabbd .tabbdli.news a i{
+    width: 16px;
+    background-position: 0 -261px;
+}
+.tabnav ul.tabbd .tabbdli.login a{
+   color: #009944;
+}
+
+/* 通知列表 */
+.tabnav ul.tabbd .quote-notice{
+	position: relative;
+}
+.tabnav ul.tabbd .quote-notice .quote-num{
+	display: block;
+	color:#535353;
+}
+.tabnav ul.tabbd .quote-notice .quote-num em{
+	display: inline-block;
+	padding: 0 3px;
+	background-color: #ff4444;
+	color:#fff;
+	border-radius:6px;
+	height: 14px;
+	line-height: 14px;
+	font-size: 12px;
+	margin-left: 3px;
+}
+.tabnav ul.tabbd .quote-notice .notice-list{
+	position: absolute;
+	top:30px;
+	left:50%;
+	margin-left: -200px;
+	z-index:9999;
+	width: 400px;
+	background-color: #fff;
+	border: 1px solid #eeeeee;
+	box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+	display: none;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .triangle{
+	position: absolute;
+	top: -5px;
+	left:50%;
+	margin-left: -5px;
+	width: 10px;
+	height: 6px;
+	background: url(../images/2016/icon.png) -435px -465px no-repeat;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .null-quote,
+.tabnav ul.tabbd .quote-notice .notice-list .null-notice{
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	color:#898989;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .null-notice{
+	border-bottom: 1px solid #eeeeee;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .notice-list-ul li{
+	border-bottom: 1px solid #eeeeee;
+    line-height:20px!important;
+    float: none!important;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .notice-list-ul li span{
+	font-size: 14px;
+	color: #5577ce;
+}
+.tabnav ul.tabbd .quote-notice .notice-list .notice-list-ul li a{
+	padding:12px 10px;
+	display: block;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .pic{
+	float: left;
+	margin-right: 5px;
+	width: 52px;
+	height: 52px;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content{
+	float: left;
+	width: 320px;
+	padding:4px 0;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content .user-need{
+	color: #313131;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content .user-need p{
+	height: 20px;
+	width: 320px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content .need-detial{
+	color:#898989;
+	margin-top: 4px;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content .need-detial p{
+	float: left;
+    width: 256px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+.tabnav ul.tabbd .quote-notice .notice-list-ul li .content .need-detial time{
+	float: right;
+	font-size: 12px;
+	color: #b5b5b5;
+}
+.tabnav ul.tabbd .quote-notice .all-notice{
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+}
+.tabnav ul.tabbd .quote-notice .all-notice a{
+	display: block;
+	color:#898989;
+}
+.tabnav ul.tabbd .quote-notice .all-notice em{
+	display: inline-block;
+	background: url(../images/2016/icon.png) -435px -475px no-repeat;
+	width: 11px;
+	height: 12px;
+	vertical-align:middle;
+	
+}
+.tabnav ul li.line{
+    margin:0 15px;
+    color: #dcdcdc;
+}
+
+/* 新的维修店报价 */
+#newShopTtips{
+	display: block;
+}
+#newShopTtips .posA.off {
+    top: 5px;
+    right: 6px;
+	background:url(../images/2016/icon.png) -49px -132px no-repeat;
+}
+#newShopTtips .box467{
+	padding: 41px 50px 32px;
+    border: 1px solid #dcdcdc;
+    width: 246px;
+    margin-top: 16%;
+    border-radius: 5px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:content-box;
+}
+#newShopTtips .hd{
+	border:0 none!important;
+}
+#newShopTtips .bd{
+	padding:0!important;
+}
+#newShopTtips .bd .b-pic{
+	text-align: center;
+}
+#newShopTtips .bd .b-content{
+	font-size: 18px;
+	color: #7f7e7e;
+	line-height: 30px;
+	margin:20px 0;
+	text-align: center;
+}
+#newShopTtips .bd .btn-look{
+	text-align: center;
+}
+#newShopTtips .bd .btn-look a{
+	width: 240px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	color: #40bb8c;
+	background-color: #fff;
+	border: 1px solid #40bb8c;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 16px;
+}
+#newShopTtips .bd .btn-look a:hover{
+	background-color: #40bb8c;
+	color:#fff;
+}
+
+
